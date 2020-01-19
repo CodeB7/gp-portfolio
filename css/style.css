@@ -1,0 +1,30 @@
+/* CSS for Background*/
+.title-bar {
+	font-size: 40px;
+	color: white;
+}
+
+
+/* CSS for Typed JS */
+.typed-cursor {
+	opacity: 1;
+	animation: blink .7s infinite;
+	font-size: 100px;
+	color: white;
+}
+@keyframes blink {
+    0% {
+        opacity: 1;
+    }
+    50% {
+        opacity: 0;
+    }
+    100% {
+        opacity: 1;
+    }
+}
+
+.write {
+		font-size: 100px;
+		color: white;
+}
