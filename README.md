@@ -1,4 +1,4 @@
 # gp-portfolio
 
 ### Link:
-https://gauravpk.github.io/gp-portfolio/
+https://codeb7.github.io/gp-portfolio/
