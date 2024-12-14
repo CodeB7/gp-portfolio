@@ -18,17 +18,8 @@ h1 {
     padding-bottom: 5px;
 }
 
-.skills {
-    display: flex;
-    flex-wrap: wrap;
-    gap: 10px;
-}
-
-.skill {
-    background: #1e1e1e;
-    padding: 10px 15px;
-    border-radius: 5px;
-    border: 1px solid #333;
+.intro {
+    margin-top: 100px !important;
 }
 
 img {
@@ -54,6 +45,19 @@ img {
 }
 
 /* Skills CSS */
+.skills {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 10px;
+}
+
+.skill {
+    background: #1e1e1e;
+    padding: 10px 15px;
+    border-radius: 5px;
+    border: 1px solid #333;
+}
+
 .skill-icon {
     width: 32px;
     height: 32px;
