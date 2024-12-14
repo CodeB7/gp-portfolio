@@ -1,0 +1,80 @@
+body {
+    margin: 0;
+    font-family: Arial, sans-serif;
+    background-color: #121212;
+    color: #e0e0e0;
+    line-height: 1.6;
+}
+
+h1 {
+    font-size: 50px;
+}
+
+.section-title {
+    font-size: 2em;
+    margin-bottom: 10px;
+    border-bottom: 2px solid #00adb5;
+    display: inline-block;
+    padding-bottom: 5px;
+}
+
+.skills {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 10px;
+}
+
+.skill {
+    background: #1e1e1e;
+    padding: 10px 15px;
+    border-radius: 5px;
+    border: 1px solid #333;
+}
+
+img {
+    max-width: 100%;
+    height: auto;
+    border-radius: 50%;
+    float: left;
+    margin: 0 0 15px 15px;
+}
+
+.bio {
+    font-size: 30px;
+}
+
+/* Project CSS */
+.project-div {
+    border: 1px solid white;
+    padding: 25px 0px 10px 35px;
+}
+
+.project-title {
+    font-size: 30px;
+}
+
+#typed-text {
+    font-size: 25px !important;
+    color: #00adb5;
+    margin-top: 20px;
+    margin-right: 20px;
+    font-size: 1.2em;
+    color: #00adb5;
+}
+
+footer {
+    text-align: center;
+    padding: 10px;
+    background: #1e1e1e;
+    border-top: 2px solid #333;
+    margin-top: 20px;
+}
+
+footer a {
+    color: #00adb5;
+    text-decoration: none;
+}
+
+footer a:hover {
+    text-decoration: underline;
+}
