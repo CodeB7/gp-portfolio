@@ -53,6 +53,17 @@ img {
     font-size: 30px;
 }
 
+/* Skills CSS */
+.skill-icon {
+    width: 32px;
+    height: 32px;
+}
+
+.skill-name {
+    margin-left: 25%;
+}
+
+/*Types JS CSS*/
 #typed-text {
     font-size: 25px !important;
     color: #00adb5;
@@ -62,6 +73,7 @@ img {
     color: #00adb5;
 }
 
+/*Footer CSS*/
 footer {
     text-align: center;
     padding: 10px;
