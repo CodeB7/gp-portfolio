@@ -186,7 +186,12 @@
     </section>
 
     <footer>
-        <p>&copy; 2024 Gaurav Prabhu K. Built with <span style="color: #00adb5;">&#10084;</span>.</p>
+        <p>&copy; <span id="current-year"></span> Gaurav Prabhu K. Built with <span style="color: #00adb5;">&#10084;</span>.</p>
     </footer>
+
+    <script>
+        // Dynamically set the current year
+        document.getElementById('current-year').textContent = new Date().getFullYear();
+    </script>
 </body>
 </html>
