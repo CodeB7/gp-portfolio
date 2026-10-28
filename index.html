@@ -1,386 +1,1226 @@
 <!DOCTYPE html>
-<html>
-	<head>
-		<title>Gaurav Prabhu K</title>
-		<!-- Latest compiled and minified CSS -->
-		<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.5/css/bootstrap.min.css">
-		<!-- jQuery library -->
-		<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
-		<!-- Latest compiled JavaScript -->
-		<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/js/bootstrap.min.js"></script>
-<!-- 		<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/js/bootstrap.min.js"></script> -->
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Gaurav Prabhu K | Senior Software Engineer — Backend, Distributed Systems & Applied AI</title>
 
-		<script type="text/javascript" src="https://cdn.bootcss.com/typed.js/1.1.4/typed.min.js"></script>
-		<!-- Add icon library -->
-		<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
-		<link rel="stylesheet" href="css/style.css">
-		<style type="text/css">
-			body {
-			  background: url('images/bg.jpg') no-repeat center center fixed;
-			  -webkit-background-size: cover;
-			  -moz-background-size: cover;
-			  background-size: cover;
-			  -o-background-size: cover;
-			}
-		</style>
+  <!-- SEO Meta Tags -->
+  <meta name="description" content="Senior Software Engineer with 8+ years experience specializing in Python, high-throughput distributed backends, production RAG & GenAI architectures, AWS, and scalable cloud systems. Open to opportunities in Europe, India, and global remote.">
+  <meta name="keywords" content="Gaurav Prabhu, Gaurav Prabhu K, Senior Software Engineer, Python Engineer, Applied AI, RAG, LangChain, Qdrant, AWS ECS, Celery, RabbitMQ, Distributed Systems, Django REST Framework, Docker, Kubernetes, Europe Tech Jobs, Remote Senior Engineer">
+  <meta name="author" content="Gaurav Prabhu K">
+  <meta name="robots" content="index, follow">
+  <link rel="canonical" href="https://codeb7.github.io/gp-portfolio/">
+
+  <!-- Open Graph / Facebook -->
+  <meta property="og:type" content="profile">
+  <meta property="og:url" content="https://codeb7.github.io/gp-portfolio/">
+  <meta property="og:title" content="Gaurav Prabhu K | Senior Software Engineer — Backend, Distributed Systems & Applied AI">
+  <meta property="og:description" content="Senior Software Engineer with 8+ years experience building production RAG systems, event-driven AWS microservices, and high-throughput APIs. Open to European and international opportunities.">
+  <meta property="og:image" content="https://codeb7.github.io/gp-portfolio/images/gp.jpeg">
+
+  <!-- Twitter -->
+  <meta property="twitter:card" content="summary_large_image">
+  <meta property="twitter:url" content="https://codeb7.github.io/gp-portfolio/">
+  <meta property="twitter:title" content="Gaurav Prabhu K | Senior Software Engineer">
+  <meta property="twitter:description" content="Senior Software Engineer with 8+ years experience specializing in Python, production RAG/LLMs, AWS microservices, and distributed systems.">
+  <meta property="twitter:image" content="https://codeb7.github.io/gp-portfolio/images/gp.jpeg">
+
+  <!-- Structured Data (JSON-LD) for Search Engines -->
+  <script type="application/ld+json">
+  {
+    "@context": "https://schema.org",
+    "@type": "Person",
+    "name": "Gaurav Prabhu K",
+    "jobTitle": "Senior Software Engineer",
+    "worksFor": {
+      "@type": "Organization",
+      "name": "Cardolite LLP"
+    },
+    "alumniOf": {
+      "@type": "CollegeOrUniversity",
+      "name": "Canara Engineering College"
+    },
+    "image": "https://codeb7.github.io/gp-portfolio/images/gp.jpeg",
+    "email": "mailto:gaurav.prabhu7@gmail.com",
+    "telephone": "+918431103547",
+    "url": "https://codeb7.github.io/gp-portfolio/",
+    "sameAs": [
+      "https://github.com/CodeB7",
+      "https://www.linkedin.com/in/gaurav-prabhu-k/"
+    ],
+    "knowsAbout": [
+      "Python",
+      "Retrieval-Augmented Generation (RAG)",
+      "LangChain",
+      "Qdrant Vector Database",
+      "Ollama",
+      "Llama 3.2",
+      "AWS ECS",
+      "AWS SQS",
+      "AWS Step Functions",
+      "Django REST Framework",
+      "Flask",
+      "Docker",
+      "Kubernetes",
+      "Celery",
+      "RabbitMQ",
+      "LDAP Mirror-Mode Replication",
+      "DNS Zone Transfers",
+      "Distributed Systems",
+      "Microservices"
+    ]
+  }
+  </script>
+
+  <!-- Google Fonts: Plus Jakarta Sans & JetBrains Mono -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=JetBrains+Mono:wght@400;500;600&family=Plus+Jakarta+Sans:wght@400;500;600;700;800&display=swap" rel="stylesheet">
+
+  <!-- Stylesheet -->
+  <link rel="stylesheet" href="css/style.css">
 </head>
 <body>
 
-	<nav class="navbar navbar-inverse">
-		<div class="container-fluid">
-			<div class="navbar-header">
-				<button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#myNavbar">
-					<span class="icon-bar"></span>
-					<span class="icon-bar"></span>
-					<span class="icon-bar"></span>
-				</button>
-				<a class="navbar-brand" href="#">Gaurav Prabhu K</a>
-			</div>
-			<div class="collapse navbar-collapse" id="myNavbar">
-				<ul class="nav navbar-nav">
-					<li class="active">
-						<a href="#">Home</a>
-					</li>
-					<li>
-						<a href="#projects">Projects</a>
-					</li>
-					<li>
-						<a href="#experience">Experience</a>
-					</li>
-					<li>
-						<a href="#skills">Skills</a>
-					</li>
-					<li>
-						<a href="#activities">Other Activities</a>
-					</li>
-					<li>
-						<a href="#awards">Awards</a>
-					</li>
-					<li>
-						<a href="#certification">Certifications</a>
-					</li>
-					<li>
-						<a href="#contact">Contact Me</a>
-					</li>
-				</ul>
-			</div>
-		</div>
-	</nav>
+  <!-- Ambient Glow Effects -->
+  <div class="ambient-glow-1" aria-hidden="true"></div>
+  <div class="ambient-glow-2" aria-hidden="true"></div>
 
-	<div class="page-header">
-			<div class="col-md-9">
-				<span class="write" style="background-color: black;"></span>
-				<style type="text/css"></style>
-				<script type="text/javascript">
-					$(function(){
-				        $(".write").typed({
-				            strings: ["Developer", "Learner", "Mentor"],
-				            typeSpeed: 100,
-				            backDelay: 2000, // pause before backspacing
-				            loop: !0, // here
-				    		startDelay: 1000,
-				        });
-				    });
-				</script>
-				<h1 style="background: black;">
-					<small style="color: white;">I live to </small>
-					<span style="color: orange;">CODE</span>
-					<small style="color: white;"> and don't code to </small>
-					<span style="color: orange;">LIVE!</span>
-				</h1>
-				<h1 style="background: black;">
-					<small style="color: white;">I do what I&nbsp;</small>
-					<span style="color: orange;">LOVE</span>
-					<small style="color: white;">&nbsp;and I love what I&nbsp;</small>
-					<span style="color: orange;">DO!</span>
-				</h1>
-				<h1 style="background: black;">
-					<small style="color: white;">My code does not&nbsp;</small>
-					<span style="color: orange;">LIE</span>
-					<small style="color: white;"> and neither do my&nbsp;</small>
-					<span style="color: orange;">COMMENTS!</span>
-				</h1>
-			</div>
-			<div class="col-md-3">
-				<div class="thumbnail">
-					<img class="img-responsive" src="images/gp.jpeg" alt="gp">
-					</div>
-				</div>
-			</div>
-	</div>
+  <!-- Sticky Header / Navigation -->
+  <header class="site-header">
+    <div class="container nav-container">
+      <a href="#hero" class="brand-link" aria-label="Gaurav Prabhu K Home">
+        <img src="images/gp.jpeg" alt="Gaurav Prabhu K" class="brand-avatar">
+        <div class="brand-text">
+          <span class="brand-name">Gaurav Prabhu K</span>
+          <span class="brand-title">Sr. Software Engineer</span>
+        </div>
+      </a>
 
-	<!-- Projects -->
-	<div class="container-fluid col-xl-12" id="projects" style="color: white;background-color: black;">
-		<h1 class="title-bar">PROJECTS</h1>
-		<h2 style="">Jarvis (In progress)
-		</br>
-			<small style="color: white;">
-			&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;An intelligent system built using TTS, which recongises voice commands and lets us play music, check emails etc. (Similar to Jarvis in the movie Iron Man).</small>
-			</h2>
-			<br/>
-			
-			<h2 style="">College lab computer monitoring system
-			</br>
-			<small style="color: white;">
-			&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;A networking software which shows the faculty, screen of computers of all the students in the lab.</small>
-			</h2>
-			<br/>
+      <!-- Desktop Nav -->
+      <nav class="nav-links" aria-label="Main Navigation">
+        <a href="#hero" class="nav-link active">About</a>
+        <a href="#experience" class="nav-link">Experience</a>
+        <a href="#skills" class="nav-link">Skills</a>
+        <a href="#projects" class="nav-link">Projects</a>
+        <a href="#community" class="nav-link">Leadership</a>
+        <a href="#education" class="nav-link">Education</a>
+        <a href="#contact" class="nav-link">Contact</a>
+      </nav>
 
-<h2 style=""><a href="https://github.com/CodeB7/weather-app"> Weather App </a>
-			</br>
-			<small style="color: white;">
-			&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;A web-app developed using Flask which gives us the weather inforation for a given city.</small>
-			</h2>
-			<br/>
+      <!-- Nav CTA -->
+      <div class="nav-actions">
+        <button class="btn btn-outline btn-sm" data-modal-open="resume-modal" aria-label="View Resume">
+          <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M14 2H6a2 2 0 0 0-2 2v16a2 2 0 0 0 2 2h12a2 2 0 0 0 2-2V8z"></path><polyline points="14 2 14 8 20 8"></polyline><line x1="16" y1="13" x2="8" y2="13"></line><line x1="16" y1="17" x2="8" y2="17"></line><polyline points="10 9 9 9 8 9"></polyline></svg>
+          <span>Resume</span>
+        </button>
+        <a href="#contact" class="btn btn-primary btn-sm">
+          <span>Get in Touch</span>
+          <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><line x1="5" y1="12" x2="19" y2="12"></line><polyline points="12 5 19 12 12 19"></polyline></svg>
+        </a>
+        <button class="mobile-nav-toggle" aria-label="Toggle navigation menu" aria-expanded="false">
+          <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><line x1="3" y1="12" x2="21" y2="12"></line><line x1="3" y1="6" x2="21" y2="6"></line><line x1="3" y1="18" x2="21" y2="18"></line></svg>
+        </button>
+      </div>
+    </div>
+  </header>
 
-			<h2 style="">LPP equations plotter and solver
-			</br>
-			<small style="color: white;">
-			&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;a project to solve Linear Programming Problem using Graphical method, covering the usage of Java JFrame and matplotlib module in Python programming language.</small>
-			</h2>
-			<br/>
+  <main>
+    <!-- =======================================================================
+         Hero Section with Recruiter Dossier
+         ======================================================================= -->
+    <section class="section hero-section" id="hero">
+      <div class="container hero-grid">
+        <!-- Left: Pitch & Value Proposition -->
+        <div class="hero-content">
+          <div class="hero-status-pill">
+            <span class="pulse-dot"></span>
+            <span>Available for Opportunities · Europe, India & Global Remote</span>
+          </div>
 
-			<h2 style="">Park the rocket
-			</br>
-			<small style="color: white;">
-			&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;a Computer Game on concept of computer graphics and visualization, using OpenGL API in C programming Language.</small>
-			</h2>
-			<br/>
+          <h1 class="hero-name">
+            Gaurav Prabhu <span class="highlight">K</span>
+          </h1>
 
-			<h2 style="">Travel agent's client ticket booking application
-			</br>
-			<small style="color: white;">
-			&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;an program for travel agents to store customer information, using Graphical User Interface in Python programming language using Tkinter module.</small>
-			</h2>
-			<br/>
-	</div>
-	<hr/>
+          <p class="hero-title">
+            Senior Software Engineer · <span class="accent">Backend, Distributed Systems & Applied AI</span>
+          </p>
 
-	<!-- Work Experience -->
-	<div class="container-fluid col-xl-12" id="experience" style="color: black;background-color: black;">
-		<h1 class="title-bar">WORK EXPERIENCE</h1>
-		<ul class="list-group">
-		  <li class="list-group-item">Internship at Semnox Solutions Mangalore during the period of 8th  January 2018 to 9th  February 2018 <span class="badge">1 month</span></li>
-		  <li class="list-group-item">Worked as a software Engineer on C# programming language and ASP.Net ast Semnox Solutions Mangalore from July 2018 to October 2018.<span class="badge">3 months</span></li>
-		  <li class="list-group-item">Currently Working as a Software Engineer at Mangalore Infotech Pvt. Ltd. (Unicourt India) from November 2018. <span class="badge">1.2 years +</span></li>
-		</ul>
-	</div>
-	<hr/>
+          <p class="hero-pitch">
+            8+ years architecting high-throughput distributed backends, production GenAI & RAG pipelines, and resilient multi-region infrastructure. Specialized in Python, event-driven AWS cloud services, vector databases, and scalable asynchronous processing.
+          </p>
 
-	<!-- Skills -->
-	<div class="container-fluid col-xl-12" id="skills" style="color: black; background-color: black;">
-		<h1 class="title-bar">SKILLS</h1>
-		  <!-- C -->
-		  <div class="col-md-6">
-		  	<h2 style="color: white;">C</h2>
-			<div class="progress">
-			  <div class="progress-bar progress-bar-success progress-bar-striped" role="progressbar" aria-valuenow="40" aria-valuemin="0" aria-valuemax="100" style="width:40%">
-			  		Intermidiate
-			  </div>
-			</div>	  					  			  	
-		  </div>
+          <div class="hero-actions">
+            <button class="btn btn-primary" data-modal-open="resume-modal">
+              <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M21 15v4a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2v-4"></path><polyline points="7 10 12 15 17 10"></polyline><line x1="12" y1="15" x2="12" y2="3"></line></svg>
+              <span>View & Download CV</span>
+            </button>
+            <a href="#contact" class="btn btn-outline">
+              <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><rect x="2" y="4" width="20" height="16" rx="2"></rect><path d="m22 7-8.97 5.7a1.94 1.94 0 0 1-2.06 0L2 7"></path></svg>
+              <span>Contact Gaurav</span>
+            </a>
+          </div>
 
-		  <!-- C++ -->
-		  <div class="col-md-6">
-		  	<h2 style="color: white;">C++</h2>
-			<div class="progress">
-			  <div class="progress-bar progress-bar-striped" role="progressbar" aria-valuenow="40" aria-valuemin="0" aria-valuemax="100" style="width:40%">
-			  		Intermidiate
-			  </div>
-			</div>	  					  			  	
-		  </div>
+          <div class="hero-socials">
+            <span class="hero-socials-label">Connect:</span>
+            <a href="https://github.com/CodeB7" target="_blank" rel="noopener noreferrer" class="social-link" aria-label="GitHub Profile (CodeB7)">
+              <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M9 19c-5 1.5-5-2.5-7-3m14 6v-3.87a3.37 3.37 0 0 0-.94-2.61c3.14-.35 6.44-1.54 6.44-7A5.44 5.44 0 0 0 20 4.77 5.07 5.07 0 0 0 19.91 1S18.73.65 16 2.48a13.38 13.38 0 0 0-7 0C6.27.65 5.09 1 5.09 1A5.07 5.07 0 0 0 5 4.77a5.44 5.44 0 0 0-1.5 3.78c0 5.42 3.3 6.61 6.44 7A3.37 3.37 0 0 0 9 18.13V22"></path></svg>
+            </a>
+            <a href="https://www.linkedin.com/in/gaurav-prabhu-k/" target="_blank" rel="noopener noreferrer" class="social-link" aria-label="LinkedIn Profile">
+              <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M16 8a6 6 0 0 1 6 6v7h-4v-7a2 2 0 0 0-2-2 2 2 0 0 0-2 2v7h-4v-7a6 6 0 0 1 6-6z"></path><rect x="2" y="9" width="4" height="12"></rect><circle cx="4" cy="4" r="2"></circle></svg>
+            </a>
+            <a href="mailto:gaurav.prabhu7@gmail.com" class="social-link" aria-label="Send Email">
+              <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><rect x="2" y="4" width="20" height="16" rx="2"></rect><path d="m22 7-8.97 5.7a1.94 1.94 0 0 1-2.06 0L2 7"></path></svg>
+            </a>
+            <button class="social-link" data-copy="gaurav.prabhu7@gmail.com" data-label="Email" title="Copy Email to Clipboard" aria-label="Copy Email">
+              <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><rect x="9" y="9" width="13" height="13" rx="2" ry="2"></rect><path d="M5 15H4a2 2 0 0 1-2-2V4a2 2 0 0 1 2-2h9a2 2 0 0 1 2 2v1"></path></svg>
+            </button>
+          </div>
+        </div>
 
-		  <!-- Java -->
-		  <div class="col-md-6">
-		  	<h2 style="color: white;">Java</h2>
-			<div class="progress">
-			  <div class="progress-bar progress-bar-info progress-bar-striped" role="progressbar" aria-valuenow="40" aria-valuemin="0" aria-valuemax="100" style="width:60%">
-			  		Intermidiate
-			  </div>
-			</div>	  					  			  	
-		  </div>
+        <!-- Right: Recruiter Quick Dossier Card -->
+        <div class="hero-card-wrapper">
+          <div class="hero-card">
+            <div class="hero-profile-header">
+              <div class="profile-image-wrap">
+                <img src="images/gp.jpeg" alt="Gaurav Prabhu K" class="profile-img">
+                <span class="profile-badge-online">
+                  <span class="pulse-dot"></span>
+                </span>
+              </div>
+              <div class="profile-meta">
+                <h3>Gaurav Prabhu K</h3>
+                <p>Senior Software Engineer</p>
+                <div class="location-tag">
+                  <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M21 10c0 7-9 13-9 13s-9-6-9-13a9 9 0 0 1 18 0z"></path><circle cx="12" cy="10" r="3"></circle></svg>
+                  <span>Mangalore / Bengaluru, India</span>
+                </div>
+              </div>
+            </div>
 
-		  <!-- Python -->
-		  <div class="col-md-6">
-		  	<h2 style="color: white;">Python</h2>
-			<div class="progress">
-			  <div class="progress-bar progress-bar-warning progress-bar-striped" role="progressbar" aria-valuenow="40" aria-valuemin="0" aria-valuemax="100" style="width:80%">
-			  		Professional
-			  </div>
-			</div>	  					  			  	
-		  </div>
+            <!-- Recruiter Fast-Scan Panel -->
+            <div class="recruiter-dossier">
+              <div class="dossier-title">
+                <span>Recruiter Fast-Scan</span>
+                <span class="dossier-badge">At a Glance</span>
+              </div>
+              <div class="dossier-list">
+                <div class="dossier-item">
+                  <span class="dossier-label">Total Experience</span>
+                  <span class="dossier-val highlight-green">8+ Years (Grad. 2018)</span>
+                </div>
+                <div class="dossier-item">
+                  <span class="dossier-label">Current Role</span>
+                  <span class="dossier-val">Software Engineer @ Cardolite</span>
+                </div>
+                <div class="dossier-item">
+                  <span class="dossier-label">Core Tech Stack</span>
+                  <span class="dossier-val">Python · RAG · AWS · Celery</span>
+                </div>
+                <div class="dossier-item">
+                  <span class="dossier-label">Relocation / Remote</span>
+                  <span class="dossier-val highlight-green">Open to EU / Relocation / Remote</span>
+                </div>
+                <div class="dossier-item">
+                  <span class="dossier-label">Timezone Compatibility</span>
+                  <span class="dossier-val">CET · GMT · EST · IST</span>
+                </div>
+                <div class="dossier-item">
+                  <span class="dossier-label">Languages</span>
+                  <span class="dossier-val">English (Fluent), Kannada, Hindi</span>
+                </div>
+              </div>
+            </div>
 
-		  <!-- Web Technologies -->
-		  <div class="col-md-6">
-		  	<h2 style="color: white;">Web Technologies</h2>
-			<div class="progress">
-			  <div class="progress-bar progress-bar-danger progress-bar-striped" role="progressbar" aria-valuenow="40" aria-valuemin="0" aria-valuemax="100" style="width:50%">
-			  		Intermediate
-			  </div>
-			</div>	  					  			  	
-		  </div>
+            <button class="quick-contact-btn" data-copy="gaurav.prabhu7@gmail.com" data-label="Email Address">
+              <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" width="16" height="16"><rect x="9" y="9" width="13" height="13" rx="2" ry="2"></rect><path d="M5 15H4a2 2 0 0 1-2-2V4a2 2 0 0 1 2-2h9a2 2 0 0 1 2 2v1"></path></svg>
+              <span>Copy Direct Email (gaurav.prabhu7@gmail.com)</span>
+            </button>
+          </div>
+        </div>
+      </div>
+    </section>
 
-		  <!-- Docker -->
-		  <div class="col-md-6">
-		  	<h2 style="color: white;">Docker</h2>
-			<div class="progress">
-			  <div class="progress-bar progress-bar-info progress-bar-striped" role="progressbar" aria-valuenow="40" aria-valuemin="0" aria-valuemax="100" style="width:60%">
-			  		Intermediate
-			  </div>
-			</div>	  					  			  	
-		  </div>
+    <!-- =======================================================================
+         Metrics Counter Banner
+         ======================================================================= -->
+    <section class="metrics-section">
+      <div class="container">
+        <div class="metrics-grid">
+          <div class="metric-card">
+            <div class="metric-number">8+</div>
+            <div class="metric-label">Years of Experience</div>
+            <div class="metric-sub">Enterprise backends, distributed systems & cloud</div>
+          </div>
+          <div class="metric-card">
+            <div class="metric-number">10+</div>
+            <div class="metric-label">Years of Call Records</div>
+            <div class="metric-sub">Indexed & queryable via custom production RAG</div>
+          </div>
+          <div class="metric-card">
+            <div class="metric-number">10k+</div>
+            <div class="metric-label">Requests / Min Handled</div>
+            <div class="metric-sub">High-throughput Django REST Framework APIs on AWS</div>
+          </div>
+          <div class="metric-card">
+            <div class="metric-number">100%</div>
+            <div class="metric-label">Directory Uptime</div>
+            <div class="metric-sub">Multi-master LDAP mirror-mode across intercontinental regions</div>
+          </div>
+        </div>
+      </div>
+    </section>
 
-		  <!-- Kubernetes -->
-		  <div class="col-md-6">
-		  	<h2 style="color: white;">Kubernetes</h2>
-			<div class="progress">
-			  <div class="progress-bar progress-bar-striped" role="progressbar" aria-valuenow="40" aria-valuemin="0" aria-valuemax="100" style="width:60%; background-color: #326CE5">
-			  		Intermediate
-			  </div>
-			</div>	  					  			  	
-		  </div>
+    <!-- =======================================================================
+         Work Experience Section
+         ======================================================================= -->
+    <section class="section" id="experience">
+      <div class="container">
+        <div class="section-header">
+          <div class="section-tag">
+            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" width="14" height="14"><rect x="2" y="7" width="20" height="14" rx="2" ry="2"></rect><path d="M16 21V5a2 2 0 0 0-2-2h-4a2 2 0 0 0-2 2v16"></path></svg>
+            <span>Career History</span>
+          </div>
+          <h2 class="section-title">Work Experience</h2>
+          <p class="section-subtitle">
+            8 years of engineering high-impact systems, production generative AI, event-driven cloud services, and mission-critical enterprise infrastructure.
+          </p>
+        </div>
 
-		  <!-- AWS -->
-		  <div class="col-md-6">
-		  	<h2 style="color: white;">Amazon Web Services</h2>
-			<div class="progress">
-			  <div class="progress-bar progress-bar-warning progress-bar-striped" role="progressbar" aria-valuenow="40" aria-valuemin="0" aria-valuemax="100" style="width:50%">
-			  		Intermediate
-			  </div>
-			</div>	  					  			  	
-		  </div>
+        <div class="experience-timeline">
 
-		  <!-- BASH -->
-		  <div class="col-md-6">
-		  	<h2 style="color: white;">Shell Scripting</h2>
-			<div class="progress">
-			  <div class="progress-bar progress-bar-success progress-bar-striped" role="progressbar" aria-valuenow="40" aria-valuemin="0" aria-valuemax="100" style="width:60%; background-color: #F75480 ">
-			  		Intermediate
-			  </div>
-			</div>	  					  			  	
-		  </div>
+          <!-- Role 1: Cardolite LLP -->
+          <article class="experience-card">
+            <div class="exp-header">
+              <div class="exp-title-group">
+                <h3>Software Engineer</h3>
+                <div class="exp-company">
+                  <span>Cardolite LLP</span>
+                  <span class="company-location">· Mangalore / Hybrid</span>
+                </div>
+              </div>
+              <div class="exp-meta">
+                <span class="exp-period">April 2024 – Present</span>
+                <span class="exp-tenure">Current Role</span>
+              </div>
+            </div>
 
-		  <!-- Git -->
-		  <div class="col-md-6">
-		  	<h2 style="color: white;">Git</h2>
-			<div class="progress">
-			  <div class="progress-bar progress-bar-striped" role="progressbar" aria-valuenow="40" aria-valuemin="0" aria-valuemax="100" style="width:80%; background-color: black;">
-			  		Professionsal
-			  </div>
-			</div>	  					  			  	
-		  </div>
-	</div>
-	<hr/>
+            <div class="exp-bullets">
+              <div class="exp-bullet">
+                <svg class="bullet-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><polyline points="9 11 12 14 22 4"></polyline><path d="M21 12v7a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2V5a2 2 0 0 1 2-2h11"></path></svg>
+                <span><strong>Custom RAG Architecture:</strong> Designed and implemented an enterprise Retrieval-Augmented Generation (RAG) pipeline utilizing <strong>Ollama, Llama 3.2, Gemma, Mistral, Nomic Embed Text, Qdrant Vector DB, and LangChain</strong>, empowering the commercial sales division to semantically search and extract actionable intelligence across 10 years of historical call recordings.</span>
+              </div>
+              <div class="exp-bullet">
+                <svg class="bullet-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><polyline points="9 11 12 14 22 4"></polyline><path d="M21 12v7a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2V5a2 2 0 0 1 2-2h11"></path></svg>
+                <span><strong>Distributed Document Indexing:</strong> Scaled asynchronous task orchestration with <strong>Celery and RabbitMQ</strong>, engineering custom chunking and token splitting strategies with LangChain to optimize vector embedding ingestion throughput and query latency.</span>
+              </div>
+              <div class="exp-bullet">
+                <svg class="bullet-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><polyline points="9 11 12 14 22 4"></polyline><path d="M21 12v7a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2V5a2 2 0 0 1 2-2h11"></path></svg>
+                <span><strong>Enterprise RAG Interface:</strong> Developed an interactive <strong>Streamlit</strong> application facilitating intuitive semantic search, contextual citation inspection, and rapid document retrieval for cross-functional stakeholders.</span>
+              </div>
+              <div class="exp-bullet">
+                <svg class="bullet-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><polyline points="9 11 12 14 22 4"></polyline><path d="M21 12v7a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2V5a2 2 0 0 1 2-2h11"></path></svg>
+                <span><strong>Intercontinental LDAP Multi-Master:</strong> Implemented LDAP multi-master replication in mirror mode across geographically separated intercontinental server nodes, maintaining 100% directory data consistency and resilient failover.</span>
+              </div>
+              <div class="exp-bullet">
+                <svg class="bullet-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><polyline points="9 11 12 14 22 4"></polyline><path d="M21 12v7a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2V5a2 2 0 0 1 2-2h11"></path></svg>
+                <span><strong>Enterprise ERP & Network Systems:</strong> Built real-time sales performance dashboards within <strong>Odoo ERP</strong> (Python + JavaScript), and configured authoritative primary/secondary DNS servers with forward/reverse lookups and automated zone transfers.</span>
+              </div>
+            </div>
 
-	<!-- Other Activities -->
-	<div class="container-fluid col-xl-12" id="activities" style="color: black; background-color: black;">
-		<h1 class="title-bar">OTHER ACTIVITES</h1>
+            <div class="exp-tech-tags">
+              <span class="tech-tag">Python</span>
+              <span class="tech-tag">LangChain</span>
+              <span class="tech-tag">Qdrant Vector DB</span>
+              <span class="tech-tag">Llama 3.2</span>
+              <span class="tech-tag">Mistral</span>
+              <span class="tech-tag">Ollama</span>
+              <span class="tech-tag">Celery</span>
+              <span class="tech-tag">RabbitMQ</span>
+              <span class="tech-tag">Streamlit</span>
+              <span class="tech-tag">LDAP Mirror-Mode</span>
+              <span class="tech-tag">DNS / BIND</span>
+              <span class="tech-tag">Odoo ERP</span>
+            </div>
+          </article>
 
+          <!-- Role 2: Raasoft Infotech -->
+          <article class="experience-card">
+            <div class="exp-header">
+              <div class="exp-title-group">
+                <h3>Senior Software Engineer</h3>
+                <div class="exp-company">
+                  <span>Raasoft Infotech Pvt. Ltd.</span>
+                  <span class="company-location">· Full-time</span>
+                </div>
+              </div>
+              <div class="exp-meta">
+                <span class="exp-period">April 2023 – May 2024</span>
+                <span class="exp-tenure">1 Year 2 Months</span>
+              </div>
+            </div>
 
-	<!-- St. Aloysius -->
-	<div class="row" style="border:none; background:white;">
-		<div class="col-md-3">
-			<img src="images/work1.jpg" class="img-fluid img-thumbnail" />
-		</div>
-		<div class="col-md-9">  
-			<h2>Python workshop at St. Aloysius College</h2>
-			<p style="font-size:20px; color:#03225C;">Condcuted a hands on Python workshop for faculty of M.Sc of Computer Science department at St. Aloysius college Mangalore. The primary objective of this workshop was to cover the <b>data structures</b> in Python such as List, Tuple and Dictionary. But alsong with these topics, the basics of Python programming were also covered. It was indded a wonderful experience and I had lots of fun!</p>
+            <div class="exp-bullets">
+              <div class="exp-bullet">
+                <svg class="bullet-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><polyline points="9 11 12 14 22 4"></polyline><path d="M21 12v7a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2V5a2 2 0 0 1 2-2h11"></path></svg>
+                <span><strong>High-Throughput REST APIs:</strong> Architected and delivered client-facing REST APIs with <strong>Django REST Framework (DRF)</strong> supporting sustained production workloads of thousands of requests per minute (RPM).</span>
+              </div>
+              <div class="exp-bullet">
+                <svg class="bullet-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><polyline points="9 11 12 14 22 4"></polyline><path d="M21 12v7a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2V5a2 2 0 0 1 2-2h11"></path></svg>
+                <span><strong>Event-Driven Cloud Backends:</strong> Orchestrated scalable, asynchronous microservices on <strong>AWS</strong> using <strong>ECS (Elastic Container Service), SQS, SNS, Step Functions, and API Gateway</strong> with robust error-handling and dead-letter queues.</span>
+              </div>
+              <div class="exp-bullet">
+                <svg class="bullet-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><polyline points="9 11 12 14 22 4"></polyline><path d="M21 12v7a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2V5a2 2 0 0 1 2-2h11"></path></svg>
+                <span><strong>Document AI & Voice Pipelines:</strong> Integrated <strong>Microsoft Azure Document Intelligence</strong> to automate commercial invoice parsing; built a <strong>Twilio Voice</strong> outbound telephony workflow complete with audio recording and speech-to-text transcription.</span>
+              </div>
+              <div class="exp-bullet">
+                <svg class="bullet-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><polyline points="9 11 12 14 22 4"></polyline><path d="M21 12v7a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2V5a2 2 0 0 1 2-2h11"></path></svg>
+                <span><strong>Machine Learning & Test Automation:</strong> Engineered an email spam-filtering classification engine using <strong>XGBoost, Naive Bayes, and SVM</strong>. Developed an automated API regression testing suite using Python's <strong>unittest</strong> framework.</span>
+              </div>
+            </div>
 
-		</div>
-	</div>
-	<hr/>
+            <div class="exp-tech-tags">
+              <span class="tech-tag">AWS ECS</span>
+              <span class="tech-tag">AWS SQS & SNS</span>
+              <span class="tech-tag">Step Functions</span>
+              <span class="tech-tag">API Gateway</span>
+              <span class="tech-tag">Django REST Framework</span>
+              <span class="tech-tag">Azure Document AI</span>
+              <span class="tech-tag">Twilio API</span>
+              <span class="tech-tag">XGBoost</span>
+              <span class="tech-tag">unittest</span>
+            </div>
+          </article>
 
-	<!-- Mangaluru Tech day -->
-	<div class="row" style="border:none; background:white;">
-		<div class="col-md-6">  
-			<h2>Volunteered Mangaluru Tech day 3</h2>
-			<p style="font-size:20px; color:#03225C;">I was one of the volunteers of TechMang3 or Mangaluru Tech day 3 held in November of 2019. It was a wonderful experience as there were talks on lot of technical topics by industry experts from various fields. The chief speaker was Mr. Augustine Correa, who had conducted a one hour long Docker Workshop.</p>
-		</div>
-		<div class="col-md-3">
-			<img src="images/work2.jpg" class="img-fluid img-thumbnail" />
-		</div>
-		<div class="col-md-3">
-			<img src="images/work3.jpeg" class="img-fluid img-thumbnail" />
-		</div>
-	</div>
+          <!-- Role 3: Mangalore Infotech / UniCourt India -->
+          <article class="experience-card">
+            <div class="exp-header">
+              <div class="exp-title-group">
+                <h3>Senior Software Engineer</h3>
+                <div class="exp-company">
+                  <span>Mangalore Infotech Solutions (UniCourt India)</span>
+                  <span class="company-location">· Full-time</span>
+                </div>
+              </div>
+              <div class="exp-meta">
+                <span class="exp-period">Jan 2022 – March 2023</span>
+                <span class="exp-tenure">1 Year 3 Months</span>
+              </div>
+            </div>
 
-	<hr/>
-	<!-- Mangaluru Tech day -->
-	<div class="row" style="border:none; background:white;">
-		<div class="col-md-6">  
-			<h2>Python Workshophop at Canara Engineering College</h2>
-			<p style="font-size:20px; color:#03225C;">I was invited to Canara Engineering College by the department of Computer Science and Engineering to conduct a one day hands on workshop for my dear juniors. It was indeed an amazing experience revisiting my alma mater and teaching the future engineers of this country.</p>
-		</div>
+            <div class="exp-bullets">
+              <div class="exp-bullet">
+                <svg class="bullet-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><polyline points="9 11 12 14 22 4"></polyline><path d="M21 12v7a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2V5a2 2 0 0 1 2-2h11"></path></svg>
+                <span><strong>Scalable Backend Architectures:</strong> Designed, developed, and maintained resilient backend systems with <strong>Django and Flask</strong>, optimizing data access layers and ensuring high concurrency and strict API contracts.</span>
+              </div>
+              <div class="exp-bullet">
+                <svg class="bullet-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><polyline points="9 11 12 14 22 4"></polyline><path d="M21 12v7a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2V5a2 2 0 0 1 2-2h11"></path></svg>
+                <span><strong>Observability & APM:</strong> Implemented end-to-end monitoring and alerting utilizing <strong>Grafana</strong> for real-time metrics, <strong>Kibana (ELK)</strong> for centralized logging, and <strong>Sentry</strong> for proactive distributed error tracking.</span>
+              </div>
+              <div class="exp-bullet">
+                <svg class="bullet-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><polyline points="9 11 12 14 22 4"></polyline><path d="M21 12v7a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2V5a2 2 0 0 1 2-2h11"></path></svg>
+                <span><strong>Microservices & Cloud Databases:</strong> Containerized applications with <strong>Docker</strong> and managed orchestration with <strong>Kubernetes</strong>. Implemented schema optimizations across relational (<strong>PostgreSQL, MySQL</strong>) and NoSQL (<strong>Amazon DynamoDB</strong>) stores.</span>
+              </div>
+              <div class="exp-bullet">
+                <svg class="bullet-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><polyline points="9 11 12 14 22 4"></polyline><path d="M21 12v7a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2V5a2 2 0 0 1 2-2h11"></path></svg>
+                <span><strong>Engineering Mentorship:</strong> Mentored junior engineers on Python PEP standards, design patterns, clean architecture, and rigorous CI/CD release cycles within an Agile framework.</span>
+              </div>
+            </div>
 
-		<div class="col-md-3">
-			<img src="images/work4.jpg" class="img-fluid img-thumbnail" />
-		</div>
-		<div class="col-md-3">
-			<img src="images/work5.jpg" class="img-fluid img-thumbnail" />
-		</div>
-	</div>
-	</div>
-	<hr/>
+            <div class="exp-tech-tags">
+              <span class="tech-tag">Python</span>
+              <span class="tech-tag">Django</span>
+              <span class="tech-tag">Flask</span>
+              <span class="tech-tag">Docker</span>
+              <span class="tech-tag">Kubernetes</span>
+              <span class="tech-tag">PostgreSQL</span>
+              <span class="tech-tag">DynamoDB</span>
+              <span class="tech-tag">Grafana</span>
+              <span class="tech-tag">Kibana</span>
+              <span class="tech-tag">Sentry</span>
+              <span class="tech-tag">Swagger/OpenAPI</span>
+            </div>
+          </article>
 
-	<!-- Awards and Recognitions -->
-	<div class="container-fluid col-xl-12" id="awards" style="color: black; background-color: black;">
-		<h1 class="title-bar">AWARDS AND RECOGNITIONS</h1>
-		<ul class="list-group">
-		  <li class="list-group-item">Awarded scholarship from World Konkani Centre.</li>
-		  <li class="list-group-item">Won in Makeathon 2016 organized at Canara Engineering College in collaboration with IEEE student cell.<span class="badge">1st Place</span></li>
-		  <li class="list-group-item">Won in Codezilla 2017 organized at Sahyadri College of Engineering and Management by Aptra and Mozilla official. <span class="badge">2nd Place</span></li>
-		  <li class="list-group-item">Won in Webbed, a web development competition at Varnothsava 2018 at SMVIT Bantakal on March 2018. <span class="badge">2nd Place</span></li>
-		</ul>
-	</div>
-	<hr/>
+          <!-- Role 4: Early Career / Foundations -->
+          <article class="experience-card">
+            <div class="exp-header">
+              <div class="exp-title-group">
+                <h3>Software Engineer · Engineering Foundations</h3>
+                <div class="exp-company">
+                  <span>Semnox Solutions & Enterprise Systems</span>
+                  <span class="company-location">· Mangalore</span>
+                </div>
+              </div>
+              <div class="exp-meta">
+                <span class="exp-period">2018 – 2021</span>
+                <span class="exp-tenure">Early Career Tenure</span>
+              </div>
+            </div>
 
-	<!-- Certifications and Seminars -->
-	<div class="container-fluid col-xl-12" id="certification" style="color: black; background-color: black;">
-		<h1 class="title-bar">CERTIFICATIONS AND SEMINARS</h1>
-		<ul class="list-group">
-		  <li class="list-group-item">Completed a one month course titled <b>PROGRAMMING IN C++</b> from NIIT on 28th  August 2015.</li>
-		  <li class="list-group-item">Completed a one month course titled <b>PROGRAMMING IN CORE JAVA</b> from NIIT 26th  August 2016.</li>
-		  <li class="list-group-item">Completed a <b>114 hours of training under KSHAMATA</b> soft skills development program conducted by the World Konkani Centre.</li>
-		  <li class="list-group-item">Presented a research paper on <b>APPLICATION OF ARTIFICIAL NEURAL NETWORKS IN THYROID TYPE DETERMINATION</b> at SMVIT Bantakal on 8th March 2018.</li>
-		  <li class="list-group-item">Presented a research paper on <b>COLLEGE LAB COMPUTER MONITORING SYSTEM</b> at AIT Cickmagalur on April 2018.</li>
-		</ul>
-	</div>
-	<hr/>
+            <div class="exp-bullets">
+              <div class="exp-bullet">
+                <svg class="bullet-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><polyline points="9 11 12 14 22 4"></polyline><path d="M21 12v7a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2V5a2 2 0 0 1 2-2h11"></path></svg>
+                <span>Engineered robust client-server architectures and transactional software services; laid deep foundations in systems programming, database query optimization, Linux systems, and automated pipelines.</span>
+              </div>
+            </div>
 
-	<!-- Contact Me -->
-	<div class="container-fluid col-xl-12" id="contact" style="color: black;background-color: white;">
-		<h1 class="title-bar" align="center" style="color: black;">REACH OUT TO ME</h1>
-		<div class="col-md-1"></div>
-		<div class="col-md-2">
-			<div align="center">
-				<a href="https://www.linkedin.com/in/gaurav-prabhu-310116152">
-					<i class="fa fa-linkedin-square" style="font-size:150px; color: #0177B5;"></i></a>
-			</div>
-		</div>
+            <div class="exp-tech-tags">
+              <span class="tech-tag">C#</span>
+              <span class="tech-tag">ASP.NET</span>
+              <span class="tech-tag">Relational Databases</span>
+              <span class="tech-tag">Linux</span>
+              <span class="tech-tag">Systems Engineering</span>
+            </div>
+          </article>
 
-		<div class="col-md-2">
-			<div align="center">
-				<a href="https://www.facebook.com/gaurav.p.k.7">
-					<i class="fa fa-facebook-square" style="font-size:150px; color: #3B5998;"></i></a>
-			</div>
-		</div>
+        </div>
+      </div>
+    </section>
 
-		<div class="col-md-2">
-			<div align="center">
-				<a href="https://twitter.com/gauravprabhu6?s=08">
-					<i class="fa fa-twitter-square" style="font-size:150px; color: #2AA9E0;"></i></a>
-			</div>
-		</div>
+    <!-- =======================================================================
+         Skills & Technical Expertise Grid
+         ======================================================================= -->
+    <section class="section" id="skills">
+      <div class="container">
+        <div class="section-header">
+          <div class="section-tag">
+            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" width="14" height="14"><polygon points="12 2 2 7 12 12 22 7 12 2"></polygon><polyline points="2 17 12 22 22 17"></polyline><polyline points="2 12 12 17 22 12"></polyline></svg>
+            <span>Technical Proficiencies</span>
+          </div>
+          <h2 class="section-title">Skills & Engineering Ecosystem</h2>
+          <p class="section-subtitle">
+            A comprehensive overview of tools, architectures, and technologies refined over 8 years of production development.
+          </p>
+        </div>
 
-		<div class="col-md-2">
-			<div align="center">
-				<a href="https://github.com/GauravPK">
-					<i class="fa fa-github" style="font-size:150px; color: black;"></i></a>
-			</div>
-		</div>
-	</div>
-	<div class="container-fluid col-xl-12" style="color: white;background-color: black; text-align: center;">
-		<h3>copyright &copy; Gaurav Prabhu K, 2020</h3>
-	</div>
+        <div class="skills-grid">
+
+          <!-- Card 1: Applied AI & GenAI -->
+          <div class="skill-category-card">
+            <div class="skill-card-header">
+              <div class="skill-icon-wrap cyan">
+                <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M12 2a8 8 0 0 0-8 8c0 3.36 2.07 6.24 5 7.42V20a2 2 0 0 0 2 2h2a2 2 0 0 0 2-2v-2.58c2.93-1.18 5-4.06 5-7.42a8 8 0 0 0-8-8z"></path><line x1="9" y1="9" x2="9.01" y2="9"></line><line x1="15" y1="9" x2="15.01" y2="9"></line></svg>
+              </div>
+              <div>
+                <h3>Applied AI, RAG & LLMs</h3>
+                <p>Production AI & Retrieval Systems</p>
+              </div>
+            </div>
+            <div class="skill-pills">
+              <span class="skill-pill featured-cyan">RAG Architectures</span>
+              <span class="skill-pill featured-cyan">LangChain</span>
+              <span class="skill-pill featured-cyan">Qdrant (Vector DB)</span>
+              <span class="skill-pill">Ollama</span>
+              <span class="skill-pill">Llama 3.2</span>
+              <span class="skill-pill">Gemma & Mistral</span>
+              <span class="skill-pill">Nomic Embeddings</span>
+              <span class="skill-pill">Streamlit</span>
+              <span class="skill-pill">Claude Code & MCP</span>
+              <span class="skill-pill">Azure Document AI</span>
+              <span class="skill-pill">Scikit-learn / XGBoost</span>
+            </div>
+          </div>
+
+          <!-- Card 2: Backend & Systems Architecture -->
+          <div class="skill-category-card">
+            <div class="skill-card-header">
+              <div class="skill-icon-wrap">
+                <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><polyline points="16 18 22 12 16 6"></polyline><polyline points="8 6 2 12 8 18"></polyline></svg>
+              </div>
+              <div>
+                <h3>Backend & System Design</h3>
+                <p>Scalable, High-Throughput APIs</p>
+              </div>
+            </div>
+            <div class="skill-pills">
+              <span class="skill-pill featured">Python (Advanced)</span>
+              <span class="skill-pill featured">Django & DRF</span>
+              <span class="skill-pill">Flask</span>
+              <span class="skill-pill">FastAPI</span>
+              <span class="skill-pill">Microservices Architecture</span>
+              <span class="skill-pill">Event-Driven Architecture</span>
+              <span class="skill-pill">RESTful API Design</span>
+              <span class="skill-pill">OOP & Design Patterns</span>
+              <span class="skill-pill">PEP 8 Standards</span>
+            </div>
+          </div>
+
+          <!-- Card 3: Cloud & Distributed Task Queues -->
+          <div class="skill-category-card">
+            <div class="skill-card-header">
+              <div class="skill-icon-wrap emerald">
+                <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M18 10h-1.26A8 8 0 1 0 9 20h9a5 5 0 0 0 0-10z"></path></svg>
+              </div>
+              <div>
+                <h3>Cloud & Distributed Tasks</h3>
+                <p>AWS & Asynchronous Orchestration</p>
+              </div>
+            </div>
+            <div class="skill-pills">
+              <span class="skill-pill featured">AWS ECS</span>
+              <span class="skill-pill featured">AWS SQS & SNS</span>
+              <span class="skill-pill">AWS Step Functions</span>
+              <span class="skill-pill">AWS API Gateway</span>
+              <span class="skill-pill">Celery & RabbitMQ</span>
+              <span class="skill-pill">Docker Containerization</span>
+              <span class="skill-pill">Kubernetes</span>
+              <span class="skill-pill">CI/CD Pipelines</span>
+              <span class="skill-pill">Git</span>
+            </div>
+          </div>
+
+          <!-- Card 4: Databases & Storage -->
+          <div class="skill-category-card">
+            <div class="skill-card-header">
+              <div class="skill-icon-wrap amber">
+                <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><ellipse cx="12" cy="5" rx="9" ry="3"></ellipse><path d="M21 12c0 1.66-4 3-9 3s-9-1.34-9-3"></path><path d="M3 5v14c0 1.66 4 3 9 3s9-1.34 9-3V5"></path></svg>
+              </div>
+              <div>
+                <h3>Databases & Storage</h3>
+                <p>Relational, NoSQL & Vector Stores</p>
+              </div>
+            </div>
+            <div class="skill-pills">
+              <span class="skill-pill featured">PostgreSQL</span>
+              <span class="skill-pill">MySQL</span>
+              <span class="skill-pill">Amazon DynamoDB</span>
+              <span class="skill-pill">Qdrant Vector DB</span>
+              <span class="skill-pill">Data Modeling</span>
+              <span class="skill-pill">Query Optimization & Indexing</span>
+              <span class="skill-pill">Database Migrations</span>
+            </div>
+          </div>
+
+          <!-- Card 5: Infrastructure & Networking -->
+          <div class="skill-category-card">
+            <div class="skill-card-header">
+              <div class="skill-icon-wrap purple">
+                <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><circle cx="12" cy="12" r="10"></circle><line x1="2" y1="12" x2="22" y2="12"></line><path d="M12 2a15.3 15.3 0 0 1 4 10 15.3 15.3 0 0 1-4 10 15.3 15.3 0 0 1-4-10 15.3 15.3 0 0 1 4-10z"></path></svg>
+              </div>
+              <div>
+                <h3>Systems & Infrastructure</h3>
+                <p>High-Availability Networking</p>
+              </div>
+            </div>
+            <div class="skill-pills">
+              <span class="skill-pill featured">LDAP Mirror-Mode Replication</span>
+              <span class="skill-pill">DNS Configuration & Zone Transfers</span>
+              <span class="skill-pill">SMTP Relay</span>
+              <span class="skill-pill">Linux Administration (Ubuntu, Fedora, MX)</span>
+              <span class="skill-pill">macOS Systems</span>
+              <span class="skill-pill">Odoo ERP Architecture</span>
+            </div>
+          </div>
+
+          <!-- Card 6: Observability, Quality & Tools -->
+          <div class="skill-category-card">
+            <div class="skill-card-header">
+              <div class="skill-icon-wrap cyan">
+                <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M22 12h-4l-3 9L9 3l-3 9H2"></path></svg>
+              </div>
+              <div>
+                <h3>Observability & Testing</h3>
+                <p>Reliability & Code Health</p>
+              </div>
+            </div>
+            <div class="skill-pills">
+              <span class="skill-pill featured">Grafana Dashboarding</span>
+              <span class="skill-pill">Kibana (ELK Stack)</span>
+              <span class="skill-pill">Sentry Exception Monitoring</span>
+              <span class="skill-pill">Python unittest & PyTest</span>
+              <span class="skill-pill">Swagger & OpenAPI 3.0</span>
+              <span class="skill-pill">Agile / Scrum Delivery</span>
+            </div>
+          </div>
+
+        </div>
+      </div>
+    </section>
+
+    <!-- =======================================================================
+         Featured Projects Section (Interactive Filter)
+         ======================================================================= -->
+    <section class="section" id="projects">
+      <div class="container">
+        <div class="section-header">
+          <div class="section-tag">
+            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" width="14" height="14"><polygon points="12 2 15.09 8.26 22 9.27 17 14.14 18.18 21.02 12 17.77 5.82 21.02 7 14.14 2 9.27 8.91 8.26 12 2"></polygon></svg>
+            <span>Engineering Showcase</span>
+          </div>
+          <h2 class="section-title">Featured Projects & Architectures</h2>
+          <p class="section-subtitle">
+            Production systems, AI platforms, and open-source contributions highlighting deep backend and applied AI expertise.
+          </p>
+        </div>
+
+        <!-- Filter Controls -->
+        <div class="project-filter-bar">
+          <button class="filter-btn active" data-filter="all">All Projects</button>
+          <button class="filter-btn" data-filter="ai">GenAI & RAG</button>
+          <button class="filter-btn" data-filter="cloud">Cloud & Distributed</button>
+          <button class="filter-btn" data-filter="opensource">Open Source</button>
+        </div>
+
+        <div class="projects-grid">
+
+          <!-- Project 1: Enterprise RAG Call Intelligence -->
+          <article class="project-card" data-category="ai">
+            <div class="project-card-top">
+              <span class="project-badge">Production GenAI</span>
+              <div class="project-links">
+                <span class="tech-tag" style="color: #34d399; border-color: rgba(16,185,129,0.3);">Enterprise Production</span>
+              </div>
+            </div>
+            <h3 class="project-title">10-Year Call Archive RAG Intelligence Platform</h3>
+            <p class="project-description">
+              Engineered an end-to-end Retrieval-Augmented Generation system over 10 years of sales recordings, unlocking commercial insights and automated retrieval for the corporate sales force.
+            </p>
+            <div class="project-highlights">
+              <h4>Architectural Highlights</h4>
+              <ul>
+                <li><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="3"><polyline points="20 6 9 17 4 12"></polyline></svg> Asynchronous ingestion queue powered by Celery and RabbitMQ.</li>
+                <li><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="3"><polyline points="20 6 9 17 4 12"></polyline></svg> High-speed vector similarity indexing with Qdrant and Nomic embeddings.</li>
+                <li><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="3"><polyline points="20 6 9 17 4 12"></polyline></svg> Multi-model inference orchestration with Ollama (Llama 3.2, Mistral, Gemma).</li>
+              </ul>
+            </div>
+            <div class="project-tech-stack">
+              <span class="tech-tag">LangChain</span>
+              <span class="tech-tag">Qdrant</span>
+              <span class="tech-tag">Ollama</span>
+              <span class="tech-tag">Celery</span>
+              <span class="tech-tag">RabbitMQ</span>
+              <span class="tech-tag">Streamlit</span>
+            </div>
+          </article>
+
+          <!-- Project 2: High-Throughput AWS Event-Driven Microservices -->
+          <article class="project-card" data-category="cloud">
+            <div class="project-card-top">
+              <span class="project-badge">Distributed Systems</span>
+              <div class="project-links">
+                <span class="tech-tag" style="color: #38bdf8; border-color: rgba(56,189,248,0.3);">AWS Cloud</span>
+              </div>
+            </div>
+            <h3 class="project-title">High-Throughput AWS Event-Driven Microservices</h3>
+            <p class="project-description">
+              Architected decoupled backend infrastructure handling thousands of requests per minute (RPM) with sub-second API response times and guaranteed message processing.
+            </p>
+            <div class="project-highlights">
+              <h4>Architectural Highlights</h4>
+              <ul>
+                <li><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="3"><polyline points="20 6 9 17 4 12"></polyline></svg> Containerized Django REST services auto-scaled on AWS ECS.</li>
+                <li><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="3"><polyline points="20 6 9 17 4 12"></polyline></svg> Pub/Sub messaging pipeline with AWS SNS, SQS & Dead Letter Queues (DLQ).</li>
+                <li><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="3"><polyline points="20 6 9 17 4 12"></polyline></svg> Multi-step stateful business flows orchestrated via AWS Step Functions.</li>
+              </ul>
+            </div>
+            <div class="project-tech-stack">
+              <span class="tech-tag">Django REST Framework</span>
+              <span class="tech-tag">AWS ECS</span>
+              <span class="tech-tag">SQS / SNS</span>
+              <span class="tech-tag">Step Functions</span>
+              <span class="tech-tag">API Gateway</span>
+            </div>
+          </article>
+
+          <!-- Project 3: Intercontinental LDAP Mirror-Mode & DNS Network -->
+          <article class="project-card" data-category="cloud">
+            <div class="project-card-top">
+              <span class="project-badge">Infrastructure & Networks</span>
+              <div class="project-links">
+                <span class="tech-tag" style="color: #a855f7; border-color: rgba(168,85,247,0.3);">High Availability</span>
+              </div>
+            </div>
+            <h3 class="project-title">Global LDAP Multi-Master & Resilient DNS Network</h3>
+            <p class="project-description">
+              Configured enterprise directory synchronization and DNS routing across multi-continental servers, ensuring zero downtime and low-latency directory lookups worldwide.
+            </p>
+            <div class="project-highlights">
+              <h4>Architectural Highlights</h4>
+              <ul>
+                <li><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="3"><polyline points="20 6 9 17 4 12"></polyline></svg> Mirror-mode multi-master LDAP topology eliminating single points of failure.</li>
+                <li><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="3"><polyline points="20 6 9 17 4 12"></polyline></svg> Authoritative primary/secondary DNS with automated zone transfers.</li>
+                <li><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="3"><polyline points="20 6 9 17 4 12"></polyline></svg> Integrated management with Odoo ERP for automated zone updates.</li>
+              </ul>
+            </div>
+            <div class="project-tech-stack">
+              <span class="tech-tag">LDAP Mirror-Mode</span>
+              <span class="tech-tag">BIND DNS</span>
+              <span class="tech-tag">Odoo ERP</span>
+              <span class="tech-tag">Linux</span>
+            </div>
+          </article>
+
+          <!-- Project 4: Movie Recommender Engine -->
+          <article class="project-card" data-category="ai opensource">
+            <div class="project-card-top">
+              <span class="project-badge">Open Source · ML</span>
+              <div class="project-links">
+                <a href="https://github.com/CodeB7/movie-recommender" target="_blank" rel="noopener noreferrer" class="project-link-icon" aria-label="GitHub Repository">
+                  <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M9 19c-5 1.5-5-2.5-7-3m14 6v-3.87a3.37 3.37 0 0 0-.94-2.61c3.14-.35 6.44-1.54 6.44-7A5.44 5.44 0 0 0 20 4.77 5.07 5.07 0 0 0 19.91 1S18.73.65 16 2.48a13.38 13.38 0 0 0-7 0C6.27.65 5.09 1 5.09 1A5.07 5.07 0 0 0 5 4.77a5.44 5.44 0 0 0-1.5 3.78c0 5.42 3.3 6.61 6.44 7A3.37 3.37 0 0 0 9 18.13V22"></path></svg>
+                </a>
+              </div>
+            </div>
+            <h3 class="project-title">Movie Recommender System</h3>
+            <p class="project-description">
+              A containerized Machine Learning recommendation service built with Flask and Docker, implementing collaborative filtering and content-based recommendation algorithms.
+            </p>
+            <div class="project-highlights">
+              <h4>Architectural Highlights</h4>
+              <ul>
+                <li><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="3"><polyline points="20 6 9 17 4 12"></polyline></svg> Scikit-learn similarity matrices & ranking pipelines.</li>
+                <li><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="3"><polyline points="20 6 9 17 4 12"></polyline></svg> Lightweight Dockerized deployment with isolated runtime dependencies.</li>
+              </ul>
+            </div>
+            <div class="project-tech-stack">
+              <span class="tech-tag">Python</span>
+              <span class="tech-tag">Machine Learning</span>
+              <span class="tech-tag">Flask</span>
+              <span class="tech-tag">Docker</span>
+            </div>
+          </article>
+
+          <!-- Project 5: OS Algorithm & Scheduling Visualizer -->
+          <article class="project-card" data-category="opensource">
+            <div class="project-card-top">
+              <span class="project-badge">Open Source · Systems</span>
+              <div class="project-links">
+                <a href="https://github.com/CodeB7/os-algo" target="_blank" rel="noopener noreferrer" class="project-link-icon" aria-label="GitHub Repository">
+                  <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M9 19c-5 1.5-5-2.5-7-3m14 6v-3.87a3.37 3.37 0 0 0-.94-2.61c3.14-.35 6.44-1.54 6.44-7A5.44 5.44 0 0 0 20 4.77 5.07 5.07 0 0 0 19.91 1S18.73.65 16 2.48a13.38 13.38 0 0 0-7 0C6.27.65 5.09 1 5.09 1A5.07 5.07 0 0 0 5 4.77a5.44 5.44 0 0 0-1.5 3.78c0 5.42 3.3 6.61 6.44 7A3.37 3.37 0 0 0 9 18.13V22"></path></svg>
+                </a>
+              </div>
+            </div>
+            <h3 class="project-title">OS Algorithm & Process Scheduling Visualizer</h3>
+            <p class="project-description">
+              Interactive visualizations of core Operating System algorithms: CPU process scheduling (FCFS, SJF, Round Robin), page replacement, and memory allocation strategies.
+            </p>
+            <div class="project-highlights">
+              <h4>Architectural Highlights</h4>
+              <ul>
+                <li><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="3"><polyline points="20 6 9 17 4 12"></polyline></svg> Real-time state-machine simulation of process queues and context switches.</li>
+                <li><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="3"><polyline points="20 6 9 17 4 12"></polyline></svg> Widely used educational reference for computer science students.</li>
+              </ul>
+            </div>
+            <div class="project-tech-stack">
+              <span class="tech-tag">JavaScript</span>
+              <span class="tech-tag">Operating Systems</span>
+              <span class="tech-tag">Algorithms</span>
+            </div>
+          </article>
+
+          <!-- Project 6: Kogul OCR to Audio Engine -->
+          <article class="project-card" data-category="ai opensource">
+            <div class="project-card-top">
+              <span class="project-badge">Open Source · Computer Vision</span>
+              <div class="project-links">
+                <a href="https://github.com/CodeB7/kogul" target="_blank" rel="noopener noreferrer" class="project-link-icon" aria-label="GitHub Repository">
+                  <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M9 19c-5 1.5-5-2.5-7-3m14 6v-3.87a3.37 3.37 0 0 0-.94-2.61c3.14-.35 6.44-1.54 6.44-7A5.44 5.44 0 0 0 20 4.77 5.07 5.07 0 0 0 19.91 1S18.73.65 16 2.48a13.38 13.38 0 0 0-7 0C6.27.65 5.09 1 5.09 1A5.07 5.07 0 0 0 5 4.77a5.44 5.44 0 0 0-1.5 3.78c0 5.42 3.3 6.61 6.44 7A3.37 3.37 0 0 0 9 18.13V22"></path></svg>
+                </a>
+              </div>
+            </div>
+            <h3 class="project-title">Kogul OCR-to-Audio Translation Pipeline</h3>
+            <p class="project-description">
+              A computer vision and speech synthesis application that extracts text from complex document images via optical character recognition and synthesizes natural audio MP3 files.
+            </p>
+            <div class="project-highlights">
+              <h4>Architectural Highlights</h4>
+              <ul>
+                <li><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="3"><polyline points="20 6 9 17 4 12"></polyline></svg> Tesseract OCR integration with custom preprocessing filters.</li>
+                <li><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="3"><polyline points="20 6 9 17 4 12"></polyline></svg> Automated Text-to-Speech (TTS) stream encoding.</li>
+              </ul>
+            </div>
+            <div class="project-tech-stack">
+              <span class="tech-tag">Python</span>
+              <span class="tech-tag">Tesseract OCR</span>
+              <span class="tech-tag">TTS</span>
+            </div>
+          </article>
+
+        </div>
+      </div>
+    </section>
+
+    <!-- =======================================================================
+         Leadership, Mentorship & Community
+         ======================================================================= -->
+    <section class="section" id="community">
+      <div class="container">
+        <div class="section-header">
+          <div class="section-tag">
+            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" width="14" height="14"><path d="M17 21v-2a4 4 0 0 0-4-4H5a4 4 0 0 0-4 4v2"></path><circle cx="9" cy="7" r="4"></circle><path d="M23 21v-2a4 4 0 0 0-3-3.87"></path><path d="M16 3.13a4 4 0 0 1 0 7.75"></path></svg>
+            <span>Mentorship & Speaking</span>
+          </div>
+          <h2 class="section-title">Leadership & Community Impact</h2>
+          <p class="section-subtitle">
+            Passionate about mentoring engineers, conducting hands-on university workshops, and championing technical excellence.
+          </p>
+        </div>
+
+        <div class="community-grid">
+          <!-- Activities list -->
+          <div class="activity-list">
+
+            <div class="activity-card">
+              <div class="activity-header">
+                <h3>St. Aloysius College M.Sc. Faculty Workshop</h3>
+                <span class="activity-badge">Hands-On Workshop</span>
+              </div>
+              <p class="activity-desc">
+                Conducted an intensive hands-on Python and Data Structures workshop for the faculty and graduate students of the M.Sc. Computer Science department at St. Aloysius College, covering advanced Python idioms, hashing, collections, and algorithmic thinking.
+              </p>
+            </div>
+
+            <div class="activity-card">
+              <div class="activity-header">
+                <h3>Canara Engineering College CSE Masterclass</h3>
+                <span class="activity-badge">Guest Lecturer</span>
+              </div>
+              <p class="activity-desc">
+                Invited back by alma mater to deliver a full-day hands-on workshop for undergraduate computer science students, bridging the academic curriculum with industry practices in Pythonic clean architecture, Git, and automated testing.
+              </p>
+            </div>
+
+            <div class="activity-card">
+              <div class="activity-header">
+                <h3>Mangaluru Tech Day 3 (TechMang3)</h3>
+                <span class="activity-badge">Organizer & Volunteer</span>
+              </div>
+              <p class="activity-desc">
+                Core organizer and volunteer for Mangaluru Tech Day 3, coordinating developer workshops on containerization, Docker, and distributed architectures with industry leaders.
+              </p>
+            </div>
+
+            <div class="activity-card">
+              <div class="activity-header">
+                <h3>Engineering Mentorship & Code Quality</h3>
+                <span class="activity-badge">Technical Leadership</span>
+              </div>
+              <p class="activity-desc">
+                Mentored junior software engineers across previous engineering teams (UniCourt India), conducting structured code reviews, instilling PEP standards, and fostering continuous integration mindsets.
+              </p>
+            </div>
+
+          </div>
+
+          <!-- Photo Gallery -->
+          <div class="gallery-grid">
+            <div class="gallery-item featured">
+              <img src="images/work1.jpg" alt="Python Workshop at St. Aloysius College" class="gallery-img">
+              <div class="gallery-caption">Leading Python Data Structures Workshop at St. Aloysius College</div>
+            </div>
+            <div class="gallery-item">
+              <img src="images/work2.jpg" alt="Mangaluru Tech Day volunteer" class="gallery-img">
+              <div class="gallery-caption">Mangaluru Tech Day</div>
+            </div>
+            <div class="gallery-item">
+              <img src="images/work4.jpg" alt="Workshop at Canara Engineering College" class="gallery-img">
+              <div class="gallery-caption">Hands-on Session at CEC</div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- =======================================================================
+         Education, Research & Honors
+         ======================================================================= -->
+    <section class="section" id="education">
+      <div class="container">
+        <div class="section-header">
+          <div class="section-tag">
+            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" width="14" height="14"><path d="M22 10v6M2 10l10-5 10 5-10 5z"></path><path d="M6 12v5c3 3 9 3 12 0v-5"></path></svg>
+            <span>Academic Background</span>
+          </div>
+          <h2 class="section-title">Education, Research & Honors</h2>
+          <p class="section-subtitle">
+            Strong foundational computer science training, peer-reviewed student research publications, and competitive awards.
+          </p>
+        </div>
+
+        <div class="edu-grid">
+
+          <!-- Education -->
+          <div class="edu-card">
+            <div class="edu-card-top">
+              <div class="edu-icon-wrap">
+                <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M22 10v6M2 10l10-5 10 5-10 5z"></path><path d="M6 12v5c3 3 9 3 12 0v-5"></path></svg>
+              </div>
+              <div>
+                <h3>Bachelor of Engineering (B.E.)</h3>
+                <div class="edu-institution">Canara Engineering College, Mangalore</div>
+              </div>
+            </div>
+            <div class="edu-period">Computer Science & Engineering · 2014 – 2018</div>
+            <div class="edu-details">
+              <div class="edu-item">
+                <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><circle cx="12" cy="8" r="7"></circle><polyline points="8.21 13.89 7 23 12 20 17 23 15.79 13.88"></polyline></svg>
+                <span>Awarded prestigious Merit Scholarship from the World Konkani Centre.</span>
+              </div>
+              <div class="edu-item">
+                <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><circle cx="12" cy="8" r="7"></circle><polyline points="8.21 13.89 7 23 12 20 17 23 15.79 13.88"></polyline></svg>
+                <span>Completed 114 hours of leadership & communication under KSHAMATA Program.</span>
+              </div>
+            </div>
+          </div>
+
+          <!-- Research & Awards -->
+          <div class="edu-card">
+            <div class="edu-card-top">
+              <div class="edu-icon-wrap amber">
+                <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><circle cx="12" cy="8" r="7"></circle><polyline points="8.21 13.89 7 23 12 20 17 23 15.79 13.88"></polyline></svg>
+              </div>
+              <div>
+                <h3>Research Papers & Honors</h3>
+                <div class="edu-institution">Conferences & Hackathons</div>
+              </div>
+            </div>
+            <div class="edu-period">Publications & Competitive Awards</div>
+            <div class="edu-details">
+              <div class="edu-item">
+                <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><polygon points="12 2 15.09 8.26 22 9.27 17 14.14 18.18 21.02 12 17.77 5.82 21.02 7 14.14 2 9.27 8.91 8.26 12 2"></polygon></svg>
+                <span><strong>1st Place</strong> — Makeathon 2016 (CEC in collaboration with IEEE Student Cell).</span>
+              </div>
+              <div class="edu-item">
+                <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><polygon points="12 2 15.09 8.26 22 9.27 17 14.14 18.18 21.02 12 17.77 5.82 21.02 7 14.14 2 9.27 8.91 8.26 12 2"></polygon></svg>
+                <span><strong>2nd Place</strong> — Codezilla 2017 (Sahyadri College, Aptra & Mozilla).</span>
+              </div>
+              <div class="edu-item">
+                <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M14 2H6a2 2 0 0 0-2 2v16a2 2 0 0 0 2 2h12a2 2 0 0 0 2-2V8z"></path></svg>
+                <span><strong>Research Paper:</strong> Application of Artificial Neural Networks in Thyroid Type Determination (SMVIT, 2018).</span>
+              </div>
+              <div class="edu-item">
+                <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M14 2H6a2 2 0 0 0-2 2v16a2 2 0 0 0 2 2h12a2 2 0 0 0 2-2V8z"></path></svg>
+                <span><strong>Research Paper:</strong> College Lab Computer Monitoring System (AIT, 2018).</span>
+              </div>
+            </div>
+          </div>
+
+        </div>
+      </div>
+    </section>
+
+    <!-- =======================================================================
+         Contact & Recruiter CTA Section
+         ======================================================================= -->
+    <section class="section contact-section" id="contact">
+      <div class="container">
+        <div class="contact-card">
+          <div class="contact-grid">
+            <div class="contact-header">
+              <h2>Let's Build Resilient Systems Together</h2>
+              <p>
+                Whether you are a recruiter looking for a Senior Software Engineer with proven distributed systems and production RAG experience, or an engineering leader looking to scale backends in Europe, India, or remotely — I'd love to connect.
+              </p>
+              
+              <div class="contact-methods">
+                <div class="contact-method-item">
+                  <div class="contact-icon">
+                    <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><rect x="2" y="4" width="20" height="16" rx="2"></rect><path d="m22 7-8.97 5.7a1.94 1.94 0 0 1-2.06 0L2 7"></path></svg>
+                  </div>
+                  <div class="contact-info">
+                    <div class="contact-type">Direct Email</div>
+                    <a href="mailto:gaurav.prabhu7@gmail.com" class="contact-value">gaurav.prabhu7@gmail.com</a>
+                  </div>
+                  <button class="copy-btn" data-copy="gaurav.prabhu7@gmail.com" data-label="Email">
+                    <span>Copy</span>
+                  </button>
+                </div>
+
+                <div class="contact-method-item">
+                  <div class="contact-icon">
+                    <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M22 16.92v3a2 2 0 0 1-2.18 2 19.79 19.79 0 0 1-8.63-3.07 19.5 19.5 0 0 1-6-6 19.79 19.79 0 0 1-3.07-8.67A2 2 0 0 1 4.11 2h3a2 2 0 0 1 2 1.72 12.84 12.84 0 0 0 .7 2.81 2 2 0 0 1-.45 2.11L8.09 9.91a16 16 0 0 0 6 6l1.27-1.27a2 2 0 0 1 2.11-.45 12.84 12.84 0 0 0 2.81.7A2 2 0 0 1 22 16.92z"></path></svg>
+                  </div>
+                  <div class="contact-info">
+                    <div class="contact-type">Phone & WhatsApp</div>
+                    <a href="tel:+918431103547" class="contact-value">+91 84311 03547</a>
+                  </div>
+                  <button class="copy-btn" data-copy="+918431103547" data-label="Phone number">
+                    <span>Copy</span>
+                  </button>
+                </div>
+              </div>
+            </div>
+
+            <!-- Recruiter Fast-Action Panel -->
+            <div class="contact-cta-panel">
+              <h3>Immediate Recruiter Actions</h3>
+              <p>
+                Seeking a senior engineer with solid hands-on Python, AWS event-driven backends, and practical RAG / GenAI engineering?
+              </p>
+              <div class="cta-buttons">
+                <a href="mailto:gaurav.prabhu7@gmail.com?subject=Senior%20Software%20Engineer%20Opportunity&body=Hi%20Gaurav,%0D%0A%0D%0AI%20came%20across%20your%20portfolio%20and%20would%20love%20to%20discuss%20an%20opportunity%20with%20our%20team.%0D%0A%0D%0ABest%20regards," class="btn btn-primary">
+                  <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><line x1="22" y1="2" x2="11" y2="13"></line><polygon points="22 2 15 22 11 13 2 9 22 2"></polygon></svg>
+                  <span>Schedule an Interview</span>
+                </a>
+                <a href="https://www.linkedin.com/in/gaurav-prabhu-k/" target="_blank" rel="noopener noreferrer" class="btn btn-outline">
+                  <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M16 8a6 6 0 0 1 6 6v7h-4v-7a2 2 0 0 0-2-2 2 2 0 0 0-2 2v7h-4v-7a6 6 0 0 1 6-6z"></path><rect x="2" y="9" width="4" height="12"></rect><circle cx="4" cy="4" r="2"></circle></svg>
+                  <span>Connect on LinkedIn</span>
+                </a>
+                <a href="https://github.com/CodeB7" target="_blank" rel="noopener noreferrer" class="btn btn-ghost">
+                  <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M9 19c-5 1.5-5-2.5-7-3m14 6v-3.87a3.37 3.37 0 0 0-.94-2.61c3.14-.35 6.44-1.54 6.44-7A5.44 5.44 0 0 0 20 4.77 5.07 5.07 0 0 0 19.91 1S18.73.65 16 2.48a13.38 13.38 0 0 0-7 0C6.27.65 5.09 1 5.09 1A5.07 5.07 0 0 0 5 4.77a5.44 5.44 0 0 0-1.5 3.78c0 5.42 3.3 6.61 6.44 7A3.37 3.37 0 0 0 9 18.13V22"></path></svg>
+                  <span>Inspect Code on GitHub</span>
+                </a>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <!-- =======================================================================
+       Footer
+       ======================================================================= -->
+  <footer class="site-footer">
+    <div class="container footer-content">
+      <div class="footer-credits">
+        <span>&copy; Gaurav Prabhu K · Built with clean semantic code & zero heavy frameworks</span>
+      </div>
+      <div class="footer-links">
+        <a href="#hero">Back to Top</a>
+        <a href="https://github.com/CodeB7" target="_blank" rel="noopener noreferrer">GitHub</a>
+        <a href="https://www.linkedin.com/in/gaurav-prabhu-k/" target="_blank" rel="noopener noreferrer">LinkedIn</a>
+        <a href="mailto:gaurav.prabhu7@gmail.com">Email</a>
+      </div>
+    </div>
+  </footer>
+
+  <!-- =======================================================================
+       Interactive Resume / CV Modal (Printable)
+       ======================================================================= -->
+  <div class="modal-backdrop" id="resume-modal" role="dialog" aria-modal="true" aria-labelledby="modal-title">
+    <div class="modal-container">
+      <div class="modal-header">
+        <h2 id="modal-title">Gaurav Prabhu K — Curriculum Vitae</h2>
+        <div style="display: flex; align-items: center; gap: 0.75rem;">
+          <button class="btn btn-primary btn-sm" id="modal-print-btn">
+            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" width="16" height="16"><polyline points="6 9 6 2 18 2 18 9"></polyline><path d="M6 18H4a2 2 0 0 1-2-2v-5a2 2 0 0 1 2-2h16a2 2 0 0 1 2 2v5a2 2 0 0 1-2 2h-2"></path><rect x="6" y="14" width="12" height="8"></rect></svg>
+            <span>Print / Save as PDF</span>
+          </button>
+          <button class="modal-close-btn" data-modal-close aria-label="Close CV Modal">
+            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" width="18" height="18"><line x1="18" y1="6" x2="6" y2="18"></line><line x1="6" y1="6" x2="18" y2="18"></line></svg>
+          </button>
+        </div>
+      </div>
+
+      <div class="modal-body">
+        <div class="resume-preview">
+          <h1>Gaurav Prabhu K</h1>
+          <div class="res-title">Senior Software Engineer — Backend, Distributed Systems & Applied AI (8+ Years Experience)</div>
+          
+          <div class="res-contact-bar">
+            <span><strong>Email:</strong> gaurav.prabhu7@gmail.com</span>
+            <span><strong>Phone:</strong> +91 8431103547</span>
+            <span><strong>GitHub:</strong> github.com/CodeB7</span>
+            <span><strong>LinkedIn:</strong> linkedin.com/in/gaurav-prabhu-k</span>
+            <span><strong>Location:</strong> India · Open to European & Global Relocation / Remote</span>
+          </div>
+
+          <h2>Executive Summary</h2>
+          <p style="font-size: 0.875rem; color: #334155; line-height: 1.6; margin-bottom: 1.25rem;">
+            Senior Software Engineer with 8 years of hands-on production experience designing high-throughput distributed backends, scalable AWS cloud microservices, and enterprise Retrieval-Augmented Generation (RAG) architectures. Proven track record handling 10,000s RPM client workloads, engineering multi-master LDAP synchronization across continents, and building asynchronous task queues with Celery and RabbitMQ. Strong technical leadership, mentoring junior engineers, and adhering to strict clean architecture and automated test coverage.
+          </p>
+
+          <h2>Work Experience</h2>
+
+          <div class="res-item">
+            <div class="res-item-header">
+              <span>Cardolite LLP</span>
+              <span>April 2024 – Present</span>
+            </div>
+            <div class="res-item-sub">
+              <span>Software Engineer</span>
+              <span>Mangalore / Hybrid</span>
+            </div>
+            <ul>
+              <li>Designed and implemented custom production RAG system with Ollama, Llama 3.2, Gemma, Mistral, Nomic Embed Text, Qdrant, and LangChain, enabling sales team to semantically search 10 years of call recordings.</li>
+              <li>Orchestrated asynchronous document indexing using Celery and RabbitMQ; authored custom chunking and tokenization algorithms with LangChain.</li>
+              <li>Engineered an interactive Streamlit enterprise dashboard for rapid document retrieval and citation inspection.</li>
+              <li>Implemented LDAP multi-master replication in mirror mode across intercontinental regions ensuring continuous directory synchronization.</li>
+              <li>Developed real-time sales performance monitoring modules in Odoo ERP with Python and JavaScript; configured redundant primary/secondary DNS servers with automated zone transfers.</li>
+            </ul>
+          </div>
+
+          <div class="res-item">
+            <div class="res-item-header">
+              <span>Raasoft Infotech Pvt. Ltd.</span>
+              <span>April 2023 – May 2024</span>
+            </div>
+            <div class="res-item-sub">
+              <span>Senior Software Engineer</span>
+              <span>Full-time</span>
+            </div>
+            <ul>
+              <li>Architected and delivered client-facing REST APIs in Django REST Framework sustaining production traffic of thousands of requests per minute (RPM).</li>
+              <li>Deployed event-driven AWS cloud microservices utilizing ECS, SQS, SNS, Step Functions, and API Gateway with dead-letter queue resilience.</li>
+              <li>Integrated Microsoft Azure Document Intelligence for automated invoice parsing, eliminating manual operational bottlenecks.</li>
+              <li>Built Twilio Voice automated telephony workflow with audio recording and speech-to-text transcription.</li>
+              <li>Developed machine learning email classification models using XGBoost, Naive Bayes, and SVM. Created automated API testing suites with unittest.</li>
+            </ul>
+          </div>
+
+          <div class="res-item">
+            <div class="res-item-header">
+              <span>Mangalore Infotech Solutions (UniCourt India)</span>
+              <span>Jan 2022 – March 2023</span>
+            </div>
+            <div class="res-item-sub">
+              <span>Senior Software Engineer</span>
+              <span>Full-time</span>
+            </div>
+            <ul>
+              <li>Engineered scalable backend systems in Django and Flask prioritizing modular architecture, performance, and low-latency queries.</li>
+              <li>Configured full-stack observability pipelines with Grafana metrics, Kibana centralized logging, and Sentry error alerting.</li>
+              <li>Designed and deployed microservices architectures using Docker containerization and Kubernetes orchestration.</li>
+              <li>Modeled data schemas and query strategies across relational (PostgreSQL, MySQL) and NoSQL (Amazon DynamoDB) databases.</li>
+              <li>Mentored 2 junior engineers in Python PEP standards, design patterns, and test-driven development.</li>
+            </ul>
+          </div>
+
+          <div class="res-item">
+            <div class="res-item-header">
+              <span>Semnox Solutions & Prior Engineering</span>
+              <span>2018 – 2021</span>
+            </div>
+            <div class="res-item-sub">
+              <span>Software Engineer</span>
+              <span>Full-time</span>
+            </div>
+            <ul>
+              <li>Engineered transactional systems in C# and ASP.NET; honed fundamental distributed software engineering, data consistency, and Linux system administration.</li>
+            </ul>
+          </div>
+
+          <h2>Technical Skills</h2>
+          <p style="font-size: 0.85rem; color: #334155; line-height: 1.6;">
+            <strong>Languages & Frameworks:</strong> Python, Django, Django REST Framework, Flask, FastAPI, JavaScript, Odoo ERP.<br>
+            <strong>Applied AI & LLMs:</strong> RAG, LangChain, Qdrant Vector Store, Ollama, Llama 3.2, Gemma, Mistral, Nomic Embeddings, Claude Code, MCP, Azure Document AI, XGBoost, Streamlit.<br>
+            <strong>Cloud & Distributed Systems:</strong> AWS (ECS, SQS, SNS, Step Functions, API Gateway, DynamoDB), Docker, Kubernetes, Celery, RabbitMQ, CI/CD, Git.<br>
+            <strong>Databases & Infrastructure:</strong> PostgreSQL, MySQL, Amazon DynamoDB, LDAP Mirror-Mode, DNS (BIND), Linux (Ubuntu, Fedora), macOS.<br>
+            <strong>Observability & Quality:</strong> Grafana, Kibana, Sentry, Python unittest, Swagger / OpenAPI 3.0.
+          </p>
+
+          <h2>Education & Honors</h2>
+          <p style="font-size: 0.85rem; color: #334155; line-height: 1.6;">
+            <strong>Bachelor of Engineering (B.E.) in Computer Science & Engineering</strong> (2014 – 2018) — Canara Engineering College, Mangalore.<br>
+            <strong>Awards:</strong> 1st Place Makeathon (IEEE Student Cell), 2nd Place Codezilla (Mozilla/Aptra), World Konkani Centre Merit Scholarship.<br>
+            <strong>Publications:</strong> Application of Artificial Neural Networks in Thyroid Type Determination (SMVIT, 2018).
+          </p>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <!-- =======================================================================
+       Toast Notification Component
+       ======================================================================= -->
+  <div class="toast" id="toast" role="status" aria-live="polite">
+    <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M22 11.08V12a10 10 0 1 1-5.93-9.14"></path><polyline points="22 4 12 14.01 9 11.01"></polyline></svg>
+    <span id="toast-message">Copied to clipboard!</span>
+  </div>
+
+  <!-- Main JavaScript File -->
+  <script src="js/main.js"></script>
 </body>
 </html>
