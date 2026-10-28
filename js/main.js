@@ -1,49 +1,49 @@
 /**
  * Gaurav Prabhu K - Portfolio Website JavaScript
- * Zero-dependency, performant ES6 vanilla script.
+ * Enhanced for Bootstrap 4 integration.
  */
 
 document.addEventListener('DOMContentLoaded', () => {
-  initNavbar();
+  initNavbarScroll();
+  initMobileNavAutoClose();
   initProjectFilters();
   initCopyButtons();
-  initResumeModal();
-  initScrollSpy();
+  initPrintHandler();
 });
 
 /* -------------------------------------------------------------------------
-   Navbar & Mobile Menu
+   Navbar Scroll Effect
    ------------------------------------------------------------------------- */
-function initNavbar() {
-  const header = document.querySelector('.site-header');
-  const toggleBtn = document.querySelector('.mobile-nav-toggle');
-  const navLinks = document.querySelectorAll('.nav-link');
+function initNavbarScroll() {
+  const navbar = document.querySelector('.site-navbar');
+  if (!navbar) return;
 
-  // Add background blur/solid on scroll
-  window.addEventListener('scroll', () => {
-    if (window.scrollY > 40) {
-      header.classList.add('scrolled');
+  const handleScroll = () => {
+    if (window.scrollY > 30) {
+      navbar.classList.add('scrolled');
     } else {
-      header.classList.remove('scrolled');
+      navbar.classList.remove('scrolled');
     }
-  }, { passive: true });
+  };
 
-  // Mobile toggle
-  if (toggleBtn) {
-    toggleBtn.addEventListener('click', () => {
-      document.body.classList.toggle('mobile-nav-active');
-      const isExpanded = document.body.classList.contains('mobile-nav-active');
-      toggleBtn.setAttribute('aria-expanded', isExpanded);
-    });
+  window.addEventListener('scroll', handleScroll, { passive: true });
+  handleScroll();
+}
 
-    // Close mobile nav on link click
-    navLinks.forEach(link => {
-      link.addEventListener('click', () => {
-        document.body.classList.remove('mobile-nav-active');
-        toggleBtn.setAttribute('aria-expanded', 'false');
-      });
+/* -------------------------------------------------------------------------
+   Auto-close Bootstrap Navbar Collapse on Link Click (Mobile)
+   ------------------------------------------------------------------------- */
+function initMobileNavAutoClose() {
+  const navLinks = document.querySelectorAll('.navbar-nav .nav-link');
+  const navbarCollapse = document.getElementById('siteNavbar');
+
+  navLinks.forEach(link => {
+    link.addEventListener('click', () => {
+      if (window.innerWidth < 992 && navbarCollapse && typeof $ !== 'undefined') {
+        $(navbarCollapse).collapse('hide');
+      }
     });
-  }
+  });
 }
 
 /* -------------------------------------------------------------------------
@@ -51,9 +51,9 @@ function initNavbar() {
    ------------------------------------------------------------------------- */
 function initProjectFilters() {
   const filterBtns = document.querySelectorAll('.filter-btn');
-  const projectCards = document.querySelectorAll('.project-card');
+  const projectItems = document.querySelectorAll('.project-item');
 
-  if (!filterBtns.length) return;
+  if (!filterBtns.length || !projectItems.length) return;
 
   filterBtns.forEach(btn => {
     btn.addEventListener('click', () => {
@@ -62,20 +62,14 @@ function initProjectFilters() {
 
       const filterCategory = btn.getAttribute('data-filter');
 
-      projectCards.forEach(card => {
-        const cardCategory = card.getAttribute('data-category');
-        if (filterCategory === 'all' || cardCategory.includes(filterCategory)) {
-          card.style.display = 'flex';
-          setTimeout(() => {
-            card.style.opacity = '1';
-            card.style.transform = 'translateY(0)';
-          }, 50);
+      projectItems.forEach(item => {
+        const itemCategory = item.getAttribute('data-category') || '';
+        if (filterCategory === 'all' || itemCategory.includes(filterCategory)) {
+          item.style.display = 'block';
+          item.style.opacity = '1';
         } else {
-          card.style.opacity = '0';
-          card.style.transform = 'translateY(10px)';
-          setTimeout(() => {
-            card.style.display = 'none';
-          }, 200);
+          item.style.display = 'none';
+          item.style.opacity = '0';
         }
       });
     });
@@ -124,83 +118,13 @@ function initCopyButtons() {
 }
 
 /* -------------------------------------------------------------------------
-   Resume Modal & Print Handler
+   Print CV Trigger
    ------------------------------------------------------------------------- */
-function initResumeModal() {
-  const openButtons = document.querySelectorAll('[data-modal-open="resume-modal"]');
-  const closeButtons = document.querySelectorAll('[data-modal-close]');
-  const modal = document.getElementById('resume-modal');
+function initPrintHandler() {
   const printBtn = document.getElementById('modal-print-btn');
-
-  if (!modal) return;
-
-  openButtons.forEach(btn => {
-    btn.addEventListener('click', (e) => {
-      e.preventDefault();
-      modal.classList.add('active');
-      document.body.style.overflow = 'hidden';
-    });
-  });
-
-  closeButtons.forEach(btn => {
-    btn.addEventListener('click', () => {
-      closeModal();
-    });
-  });
-
-  modal.addEventListener('click', (e) => {
-    if (e.target === modal) {
-      closeModal();
-    }
-  });
-
-  document.addEventListener('keydown', (e) => {
-    if (e.key === 'Escape' && modal.classList.contains('active')) {
-      closeModal();
-    }
-  });
-
   if (printBtn) {
     printBtn.addEventListener('click', () => {
       window.print();
     });
   }
-
-  function closeModal() {
-    modal.classList.remove('active');
-    document.body.style.overflow = '';
-  }
-}
-
-/* -------------------------------------------------------------------------
-   Scroll Spy for Active Navigation Link
-   ------------------------------------------------------------------------- */
-function initScrollSpy() {
-  const sections = document.querySelectorAll('section[id]');
-  const navLinks = document.querySelectorAll('.nav-link[href^="#"]');
-
-  if (!sections.length || !navLinks.length) return;
-
-  const observerOptions = {
-    root: null,
-    rootMargin: '-20% 0px -70% 0px',
-    threshold: 0
-  };
-
-  const observer = new IntersectionObserver((entries) => {
-    entries.forEach(entry => {
-      if (entry.isIntersecting) {
-        const id = entry.target.getAttribute('id');
-        navLinks.forEach(link => {
-          if (link.getAttribute('href') === `#${id}`) {
-            link.classList.add('active');
-          } else {
-            link.classList.remove('active');
-          }
-        });
-      }
-    });
-  }, observerOptions);
-
-  sections.forEach(sec => observer.observe(sec));
 }
