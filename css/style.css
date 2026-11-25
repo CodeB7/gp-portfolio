@@ -1688,6 +1688,7 @@ body::before {
 .section-title, .profile-meta h3, .exp-role, .skill-card-title, .project-title,
 .activity-card h3, .edu-card h3, .contact-card h2, .contact-cta-panel h3 { color: #132238; }
 .section-subtitle, .hero-pitch, .exp-bullet-item, .activity-desc, .contact-card .contact-intro { color: #4c5d72; }
+.exp-bullet-item .bullet-icon { font-size: 1.35rem; line-height: 1; color: #3157a4; }
 .hero-status-pill { color: #17603f; background: #e8f4ed; border-color: #c7e4d2; }
 .pulse-dot { background: #18794e; }
 .hero-name .highlight, .metric-number { background-image: var(--gradient-brand); }
@@ -1714,6 +1715,11 @@ body::before {
 .quick-contact-btn:hover { background: #eaf2f6; color: #132238; }
 .metric-card { border-top: 3px solid #176b87; }
 .metric-number { font-size: clamp(1.7rem, 3vw, 2.45rem); }
+.metric-number--text {
+  font-size: clamp(1.15rem, 1.8vw, 1.5rem);
+  letter-spacing: -0.03em;
+  white-space: nowrap;
+}
 .metric-card:last-child .metric-number {
   font-size: clamp(1rem, 2vw, 1.4rem);
   letter-spacing: -0.04em;
@@ -1721,6 +1727,28 @@ body::before {
 }
 .metric-label { color: #17263a; }
 .metric-sub { color: #617187; }
+.skills-compact-card { min-height: 118px; justify-content: center; padding: 1.35rem 1.5rem; }
+.skills-compact-card .skill-card-title { margin-bottom: .45rem; }
+.skills-compact-card p { margin: 0; color: #4c5d72; font-size: .92rem; line-height: 1.65; }
+.more-work-card {
+  height: 100%;
+  padding: 1.5rem 1.65rem;
+  border: 1px solid #d8e1e9;
+  border-radius: var(--radius-lg);
+  background: #fff;
+  box-shadow: 0 8px 26px rgba(19, 34, 56, 0.055);
+}
+.more-work-kicker {
+  display: block;
+  margin-bottom: .45rem;
+  color: #176b87;
+  font: 600 .72rem/1.4 var(--font-mono);
+  letter-spacing: .06em;
+  text-transform: uppercase;
+}
+.more-work-card h3 { margin: 0 0 .45rem; color: #132238; font-size: 1.05rem; font-weight: 700; }
+.more-work-card p { margin: 0; color: #4c5d72; font-size: .9rem; line-height: 1.6; }
+.more-work-card a { display: inline-block; margin-top: .75rem; color: #176b87; font-weight: 600; }
 .experience-card:hover, .skill-category-card:hover, .project-card:hover, .edu-card:hover {
   border-color: #aac8d5;
   box-shadow: 0 14px 34px rgba(19, 34, 56, 0.1);
