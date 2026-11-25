@@ -8,7 +8,6 @@ document.addEventListener('DOMContentLoaded', () => {
   initMobileNavAutoClose();
   initProjectFilters();
   initCopyButtons();
-  initPrintHandler();
 });
 
 /* -------------------------------------------------------------------------
@@ -61,16 +60,13 @@ function initProjectFilters() {
       btn.classList.add('active');
 
       const filterCategory = btn.getAttribute('data-filter');
+      filterBtns.forEach(filterBtn => {
+        filterBtn.setAttribute('aria-pressed', String(filterBtn === btn));
+      });
 
       projectItems.forEach(item => {
         const itemCategory = item.getAttribute('data-category') || '';
-        if (filterCategory === 'all' || itemCategory.includes(filterCategory)) {
-          item.style.display = 'block';
-          item.style.opacity = '1';
-        } else {
-          item.style.display = 'none';
-          item.style.opacity = '0';
-        }
+        item.hidden = filterCategory !== 'all' && !itemCategory.includes(filterCategory);
       });
     });
   });
@@ -114,17 +110,5 @@ function initCopyButtons() {
     setTimeout(() => {
       toast.classList.remove('show');
     }, 3200);
-  }
-}
-
-/* -------------------------------------------------------------------------
-   Print CV Trigger
-   ------------------------------------------------------------------------- */
-function initPrintHandler() {
-  const printBtn = document.getElementById('modal-print-btn');
-  if (printBtn) {
-    printBtn.addEventListener('click', () => {
-      window.print();
-    });
   }
 }

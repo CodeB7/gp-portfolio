@@ -1,0 +1,120 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="description" content="ATS-friendly curriculum vitae for Gaurav Prabhu K, Senior Backend Engineer.">
+  <title>Gaurav Prabhu K | Senior Backend Engineer CV</title>
+  <style>
+    :root { color-scheme: light; --ink: #152238; --muted: #4c5b70; --line: #d7dee7; --accent: #176b87; }
+    * { box-sizing: border-box; }
+    body { margin: 0; background: #eef2f6; color: var(--ink); font: 15px/1.52 Arial, Helvetica, sans-serif; }
+    .actions { display: flex; justify-content: center; gap: 12px; padding: 22px; }
+    .actions a, .actions button { border: 1px solid var(--accent); border-radius: 6px; background: var(--accent); color: white; padding: 10px 16px; font: 700 14px Arial, sans-serif; text-decoration: none; cursor: pointer; }
+    .actions a.secondary { background: white; color: var(--accent); }
+    main { max-width: 900px; margin: 0 auto 48px; padding: 52px 64px; background: white; box-shadow: 0 12px 40px #1f31421a; }
+    h1 { margin: 0; font-size: 32px; line-height: 1.15; letter-spacing: -.5px; }
+    .role { margin: 7px 0 12px; color: var(--accent); font-weight: 700; font-size: 18px; }
+    .contact { display: flex; flex-wrap: wrap; gap: 4px 16px; padding-bottom: 16px; border-bottom: 2px solid var(--ink); color: var(--muted); font-size: 13px; }
+    h2 { margin: 23px 0 9px; padding-bottom: 5px; border-bottom: 1px solid var(--line); font-size: 15px; letter-spacing: .08em; text-transform: uppercase; }
+    p { margin: 0 0 8px; }
+    .skills { color: var(--muted); }
+    .job { margin: 0 0 14px; break-inside: avoid; }
+    .job-head { display: flex; justify-content: space-between; gap: 16px; font-weight: 700; }
+    .job-sub { display: flex; justify-content: space-between; gap: 16px; margin: 2px 0 5px; color: var(--muted); font-size: 13px; }
+    ul { margin: 4px 0 0; padding-left: 18px; }
+    li { margin: 0 0 4px; }
+    @media (max-width: 640px) { main { margin: 0; padding: 30px 22px; box-shadow: none; } .job-head, .job-sub { display: block; } body { background: white; } }
+    @media print {
+      @page { size: A4; margin: 14mm 16mm; }
+      body { background: white; font-size: 10pt; line-height: 1.4; }
+      .actions { display: none; }
+      main { max-width: none; margin: 0; padding: 0; box-shadow: none; }
+      h1 { font-size: 22pt; }
+      .role { font-size: 12pt; }
+      h2 { margin-top: 15px; font-size: 10pt; }
+      .job { margin-bottom: 10px; }
+      a { color: inherit; text-decoration: none; }
+    }
+  </style>
+</head>
+<body>
+  <nav class="actions" aria-label="CV actions">
+    <a href="output/pdf/gaurav-prabhu-k-cv.pdf" download>Download PDF</a>
+    <a class="secondary" href="index.html">Back to portfolio</a>
+    <button type="button" onclick="window.print()">Print</button>
+  </nav>
+  <main>
+    <header>
+      <h1>Gaurav Prabhu K</h1>
+      <p class="role">Senior Backend Engineer | Python, AWS &amp; Distributed Systems</p>
+      <div class="contact">
+        <span>gaurav.prabhu7@gmail.com</span><span>+91 84311 03547</span>
+        <span>github.com/CodeB7</span><span>linkedin.com/in/gaurav-prabhu-k</span>
+        <span>India | Open to European relocation and remote opportunities</span>
+      </div>
+    </header>
+
+    <section aria-labelledby="summary-heading">
+      <h2 id="summary-heading">Professional Summary</h2>
+      <p>Senior backend engineer with 8+ years of experience building Python services, Django REST APIs, AWS event-driven systems, and distributed infrastructure. Experience includes production API workloads of thousands of requests per minute, asynchronous processing with Celery and RabbitMQ, and a retrieval-augmented generation system for searching ten years of sales call records.</p>
+    </section>
+
+    <section aria-labelledby="skills-heading">
+      <h2 id="skills-heading">Technical Skills</h2>
+      <p class="skills"><strong>Backend:</strong> Python, Django, Django REST Framework, Flask, FastAPI, REST APIs, microservices<br>
+      <strong>Cloud and messaging:</strong> AWS ECS, SQS, SNS, Step Functions, API Gateway, Celery, RabbitMQ, Docker, Kubernetes<br>
+      <strong>Data:</strong> PostgreSQL, MySQL, DynamoDB, Qdrant, vector search<br>
+      <strong>Applied AI:</strong> RAG, LangChain, Ollama, Llama, Gemma, Mistral, Nomic embeddings, Azure Document Intelligence<br>
+      <strong>Operations:</strong> Linux, LDAP replication, DNS/BIND, Grafana, Kibana/ELK, Sentry, Python unittest, OpenAPI</p>
+    </section>
+
+    <section aria-labelledby="experience-heading">
+      <h2 id="experience-heading">Professional Experience</h2>
+      <article class="job">
+        <div class="job-head"><span>Cardolite LLP</span><span>April 2024 - Present</span></div>
+        <div class="job-sub"><span>Software Engineer</span><span>Mangalore / Hybrid</span></div>
+        <ul>
+          <li>Designed a RAG system using Ollama-hosted language models, Nomic embeddings, Qdrant, and LangChain to support semantic search across ten years of sales call recordings.</li>
+          <li>Built asynchronous indexing workflows with Celery and RabbitMQ, including custom chunking and token-splitting strategies.</li>
+          <li>Developed a Streamlit interface for semantic search, citation inspection, and document retrieval.</li>
+          <li>Implemented LDAP multi-master mirror-mode replication across geographically separated nodes; configured DNS services and automated zone transfers.</li>
+          <li>Built sales performance dashboards in Odoo ERP using Python and JavaScript.</li>
+        </ul>
+      </article>
+      <article class="job">
+        <div class="job-head"><span>Raasoft Infotech Pvt. Ltd.</span><span>April 2023 - May 2024</span></div>
+        <div class="job-sub"><span>Senior Software Engineer</span><span>Full-time</span></div>
+        <ul>
+          <li>Designed client-facing Django REST Framework APIs supporting production workloads of thousands of requests per minute.</li>
+          <li>Built event-driven AWS services with ECS, SQS, SNS, Step Functions, API Gateway, error handling, and dead-letter queues.</li>
+          <li>Integrated Azure Document Intelligence for invoice parsing and built a Twilio outbound voice workflow with call recording and speech-to-text transcription.</li>
+          <li>Developed email classification experiments using XGBoost, Naive Bayes, and SVM; created automated API regression tests with Python unittest.</li>
+        </ul>
+      </article>
+      <article class="job">
+        <div class="job-head"><span>Mangalore Infotech Solutions (UniCourt India)</span><span>January 2022 - March 2023</span></div>
+        <div class="job-sub"><span>Senior Software Engineer</span><span>Full-time</span></div>
+        <ul>
+          <li>Developed Django and Flask backend services, optimizing data access and API contracts.</li>
+          <li>Implemented monitoring and alerting with Grafana, Kibana/ELK, and Sentry.</li>
+          <li>Containerized services with Docker and Kubernetes and worked across PostgreSQL, MySQL, and DynamoDB.</li>
+          <li>Mentored junior engineers on Python standards, design patterns, clean architecture, and CI/CD practices.</li>
+        </ul>
+      </article>
+      <article class="job">
+        <div class="job-head"><span>Semnox Solutions &amp; Enterprise Systems</span><span>2018 - 2021</span></div>
+        <div class="job-sub"><span>Software Engineer</span><span>Mangalore</span></div>
+        <ul><li>Built client-server and transactional software and developed foundations in systems programming, database optimization, and Linux.</li></ul>
+      </article>
+    </section>
+
+    <section aria-labelledby="education-heading">
+      <h2 id="education-heading">Education, Research &amp; Awards</h2>
+      <p><strong>B.E., Computer Science &amp; Engineering</strong> - Canara Engineering College, Mangalore (2014 - 2018)</p>
+      <p>1st Place, Makeathon 2016 (IEEE Student Cell); 2nd Place, Codezilla 2017; World Konkani Centre Merit Scholarship.</p>
+      <p>Research: Application of Artificial Neural Networks in Thyroid Type Determination (SMVIT, 2018).</p>
+    </section>
+  </main>
+</body>
+</html>

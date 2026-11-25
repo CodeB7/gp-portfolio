@@ -1631,3 +1631,129 @@ img {
     color: #333333 !important;
   }
 }
+
+/* ==========================================================================
+   Backend portfolio refresh: crisp editorial surfaces, readable contrast,
+   and a restrained blue/teal palette.
+   ========================================================================== */
+:root {
+  --bg-primary: #f2f5f8;
+  --bg-secondary: #e8eef3;
+  --bg-card: #ffffff;
+  --bg-card-hover: #f7fafc;
+  --border-subtle: #d8e1e9;
+  --border-highlight: rgba(23, 107, 135, 0.35);
+  --border-cyan: rgba(23, 107, 135, 0.35);
+  --text-primary: #17263a;
+  --text-secondary: #4c5d72;
+  --text-muted: #617187;
+  --text-white: #132238;
+  --accent-cyan: #176b87;
+  --accent-indigo: #3157a4;
+  --accent-blue: #2563a6;
+  --accent-emerald: #18794e;
+  --accent-amber: #a65b16;
+  --accent-purple: #7252a6;
+  --gradient-brand: linear-gradient(120deg, #176b87 0%, #3157a4 100%);
+  --shadow-sm: 0 1px 2px rgba(19, 34, 56, 0.05);
+  --shadow-md: 0 5px 16px rgba(19, 34, 56, 0.07);
+  --shadow-lg: 0 16px 36px rgba(19, 34, 56, 0.1);
+  --shadow-glow: 0 14px 35px rgba(49, 87, 164, 0.08);
+  --shadow-cyan-glow: 0 14px 35px rgba(23, 107, 135, 0.08);
+}
+
+html { scroll-padding-top: 92px; }
+body { background: var(--bg-primary); color: var(--text-primary); }
+body::before {
+  background-image: linear-gradient(rgba(49, 87, 164, 0.035) 1px, transparent 1px),
+                    linear-gradient(90deg, rgba(49, 87, 164, 0.035) 1px, transparent 1px);
+  background-size: 48px 48px;
+}
+.ambient-glow-1 { background: radial-gradient(circle, rgba(49, 87, 164, 0.08), transparent 70%); }
+.ambient-glow-2 { background: radial-gradient(circle, rgba(23, 107, 135, 0.07), transparent 70%); }
+.site-navbar, .site-navbar.scrolled {
+  background: rgba(248, 250, 252, 0.94) !important;
+  border-bottom-color: #d9e2eb;
+  box-shadow: 0 5px 22px rgba(19, 34, 56, 0.06);
+}
+.brand-name { color: #132238 !important; }
+.brand-sub { color: #617187 !important; }
+.brand-avatar { border-color: #3157a4; box-shadow: 0 0 0 3px rgba(49, 87, 164, 0.1); }
+.navbar-toggler { border-color: #cbd5df; }
+.navbar-toggler-icon { filter: brightness(.22); }
+.navbar-nav .nav-link { color: #4c5d72 !important; }
+.navbar-nav .nav-link:hover, .navbar-nav .nav-link.active { color: #176b87 !important; }
+.navbar-collapse { background: rgba(248, 250, 252, 0.98) !important; border-color: #d8e1e9 !important; }
+.section-tag { color: #176b87; background: #e5f1f4; border-color: #c7e0e7; }
+.section-title, .profile-meta h3, .exp-role, .skill-card-title, .project-title,
+.activity-card h3, .edu-card h3, .contact-card h2, .contact-cta-panel h3 { color: #132238; }
+.section-subtitle, .hero-pitch, .exp-bullet-item, .activity-desc, .contact-card .contact-intro { color: #4c5d72; }
+.hero-status-pill { color: #17603f; background: #e8f4ed; border-color: #c7e4d2; }
+.pulse-dot { background: #18794e; }
+.hero-name .highlight, .metric-number { background-image: var(--gradient-brand); }
+.hero-title { color: #283b53; }
+.hero-title .accent, .profile-meta p, .exp-company { color: #176b87; }
+.hero-card, .experience-card, .skill-category-card, .project-card, .activity-card,
+.edu-card, .contact-card, .metric-card {
+  background: #fff;
+  border-color: #d8e1e9;
+  box-shadow: 0 8px 26px rgba(19, 34, 56, 0.055);
+  backdrop-filter: none;
+  -webkit-backdrop-filter: none;
+}
+.hero-card::before { background: linear-gradient(90deg, #176b87, #3157a4); }
+.recruiter-dossier, .project-highlights {
+  background: #f4f7fa;
+  border-color: #e1e7ed;
+}
+.dossier-title, .project-highlights-title { color: #617187; border-bottom-color: #e1e7ed; }
+.dossier-label, .location-tag, .exp-company-loc, .exp-tenure { color: #617187; }
+.dossier-val { color: #17263a; }
+.dossier-val.highlight-green { color: #18794e; }
+.quick-contact-btn { background: #f5f8fa; border-color: #d8e1e9; color: #17263a; }
+.quick-contact-btn:hover { background: #eaf2f6; color: #132238; }
+.metric-card { border-top: 3px solid #176b87; }
+.metric-number { font-size: clamp(1.7rem, 3vw, 2.45rem); }
+.metric-card:last-child .metric-number {
+  font-size: clamp(1rem, 2vw, 1.4rem);
+  letter-spacing: -0.04em;
+  white-space: nowrap;
+}
+.metric-label { color: #17263a; }
+.metric-sub { color: #617187; }
+.experience-card:hover, .skill-category-card:hover, .project-card:hover, .edu-card:hover {
+  border-color: #aac8d5;
+  box-shadow: 0 14px 34px rgba(19, 34, 56, 0.1);
+}
+.tech-tag { color: #245485; background: #edf4fa; border-color: #d4e3f0; }
+.tech-tag:hover { color: #173f69; background: #e1edf7; }
+.skill-pill { color: #34465d; background: #f4f7fa; border-color: #e0e6ec; }
+.skill-pill.featured, .skill-pill.featured-cyan { color: #174a67; background: #e7f1f5; border-color: #cde0e8; }
+.filter-btn { color: #4c5d72; background: #fff; border-color: #d8e1e9; }
+.filter-btn.active { color: white; background: var(--gradient-brand); }
+.project-badge { color: #176b87; background: #e6f1f4; }
+.project-highlights li { color: #34465d; }
+.activity-badge { color: #245485; background: #edf4fa; }
+.contact-cta-panel { background: #f4f7fa; border-color: #d8e1e9; }
+.contact-method-item { background: #f7fafc; border-color: #d8e1e9; }
+.contact-method-item:hover { background: #eef5f8; border-color: #aac8d5; }
+.contact-icon { background: #e8f1f7; border-color: #d2e2ed; color: #3157a4; }
+.copy-btn { background: #fff; border-color: #cbd7e1; color: #34465d; }
+.copy-btn:hover { background: #e8f1f7; color: #174a67; border-color: #aac8d5; }
+.contact-value { color: #176b87; }
+.contact-type { color: #617187; }
+.site-footer { color: #617187; background: #e9eef3; border-top-color: #d8e1e9; }
+.footer-links a { color: #4c5d72; }
+.footer-links a:hover { color: #176b87; }
+.toast-notify { background: #fff; color: #17263a; border-color: #18794e; }
+.social-link { background: #fff; border-color: #d8e1e9; color: #4c5d72; }
+.social-link:hover { color: #176b87; border-color: #176b87; }
+.project-item[hidden] { display: none !important; }
+:focus-visible { outline: 3px solid #176b87; outline-offset: 3px; }
+
+@media (max-width: 991.98px) {
+  .navbar-collapse { box-shadow: 0 15px 35px rgba(19, 34, 56, 0.12) !important; }
+}
+@media (prefers-reduced-motion: reduce) {
+  *, *::before, *::after { scroll-behavior: auto !important; animation-duration: .01ms !important; animation-iteration-count: 1 !important; transition-duration: .01ms !important; }
+}
