@@ -1730,25 +1730,17 @@ body::before {
 .skills-compact-card { min-height: 118px; justify-content: center; padding: 1.35rem 1.5rem; }
 .skills-compact-card .skill-card-title { margin-bottom: .45rem; }
 .skills-compact-card p { margin: 0; color: #4c5d72; font-size: .92rem; line-height: 1.65; }
-.more-work-card {
-  height: 100%;
-  padding: 1.5rem 1.65rem;
+.more-work-details {
+  margin: 0 0 1.5rem;
+  padding: 1rem 1.25rem;
   border: 1px solid #d8e1e9;
   border-radius: var(--radius-lg);
   background: #fff;
   box-shadow: 0 8px 26px rgba(19, 34, 56, 0.055);
 }
-.more-work-kicker {
-  display: block;
-  margin-bottom: .45rem;
-  color: #176b87;
-  font: 600 .72rem/1.4 var(--font-mono);
-  letter-spacing: .06em;
-  text-transform: uppercase;
-}
-.more-work-card h3 { margin: 0 0 .45rem; color: #132238; font-size: 1.05rem; font-weight: 700; }
-.more-work-card p { margin: 0; color: #4c5d72; font-size: .9rem; line-height: 1.6; }
-.more-work-card a { display: inline-block; margin-top: .75rem; color: #176b87; font-weight: 600; }
+.more-work-details summary { color: #176b87; font-weight: 700; cursor: pointer; }
+.more-work-details p { margin: .75rem 0 0; color: #4c5d72; font-size: .9rem; line-height: 1.6; }
+.more-work-details a { color: #176b87; font-weight: 600; }
 .experience-card:hover, .skill-category-card:hover, .project-card:hover, .edu-card:hover {
   border-color: #aac8d5;
   box-shadow: 0 14px 34px rgba(19, 34, 56, 0.1);
