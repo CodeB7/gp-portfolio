@@ -31,7 +31,7 @@ The portfolio links to an ATS-friendly PDF at `output/pdf/gaurav-prabhu-k-cv.pdf
 
 - API throughput is described consistently as production workloads of thousands of requests per minute.
 - The LDAP experience describes multi-region mirror-mode replication without an uptime percentage.
-- Employment dates are retained from the current portfolio content. Cardolite (April 2024-present) and Raasoft (April 2023-May 2024) overlap in the supplied dates; confirm the dates before using the CV externally.
+- Employment dates were updated to the supplied timeline: Semnox (July-August 2018), UniCourt (November 2018-March 2023), Raasoft (April 2023-March 2024), and Cardolite (April 2024-present).
 - Technical and business outcomes should remain limited to claims that can be substantiated.
 
 ## Contact
@@ -39,3 +39,4 @@ The portfolio links to an ATS-friendly PDF at `output/pdf/gaurav-prabhu-k-cv.pdf
 - Email: [gaurav.prabhu7@gmail.com](mailto:gaurav.prabhu7@gmail.com)
 - LinkedIn: [linkedin.com/in/gaurav-prabhu-k](https://www.linkedin.com/in/gaurav-prabhu-k/)
 - GitHub: [github.com/CodeB7](https://github.com/CodeB7)
+- Medium: [gaurav-prabhu7.medium.com](https://gaurav-prabhu7.medium.com/)

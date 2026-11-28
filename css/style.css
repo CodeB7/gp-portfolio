@@ -500,6 +500,14 @@ img {
   width: 18px;
   height: 18px;
 }
+.blog-link {
+  width: auto;
+  min-width: 38px;
+  padding: 0 0.55rem;
+  font-size: 0.72rem;
+  font-weight: 700;
+  letter-spacing: 0.01em;
+}
 
 /* Hero Right Profile & Dossier Card */
 .hero-card {
@@ -1776,4 +1784,60 @@ body::before {
 }
 @media (prefers-reduced-motion: reduce) {
   *, *::before, *::after { scroll-behavior: auto !important; animation-duration: .01ms !important; animation-iteration-count: 1 !important; transition-duration: .01ms !important; }
+}
+
+@media (max-width: 575.98px) {
+  .site-navbar { padding: .4rem 0; }
+  .navbar-brand { margin-right: .5rem; }
+  .brand-avatar { width: 34px; height: 34px; margin-right: .5rem; }
+  .brand-name { font-size: clamp(.8rem, 4vw, .9rem); }
+  .brand-sub { font-size: .62rem; }
+  .navbar-toggler { padding: .25rem .45rem; }
+
+  .hero-section { padding-top: calc(70px + 1rem); padding-bottom: 2.5rem; }
+  .hero-name { font-size: clamp(2rem, 8vw, 2.6rem); }
+  .hero-title { font-size: clamp(1.05rem, 4.5vw, 1.25rem); }
+  .hero-status-pill {
+    max-width: 100%;
+    align-items: flex-start;
+    padding: .35rem .7rem;
+    font-size: .72rem;
+    line-height: 1.45;
+  }
+  .hero-status-pill > span:last-child { min-width: 0; }
+  .hero-section .d-flex.flex-wrap.align-items-center.mb-3 > .btn {
+    width: 100%;
+    margin-right: 0 !important;
+    justify-content: center;
+  }
+  .hero-card { padding: 1.25rem; }
+  .dossier-title {
+    flex-wrap: wrap;
+    gap: 0.35rem;
+  }
+  .dossier-title > span:first-child {
+    flex: 1 0 100%;
+    white-space: nowrap;
+  }
+  .dossier-badge {
+    align-self: flex-end;
+    white-space: nowrap;
+  }
+  .dossier-item { gap: .5rem; font-size: .78rem; }
+  .dossier-label { max-width: 42%; }
+  .dossier-val { max-width: 58%; }
+
+  .project-card > .d-flex.align-items-center.justify-content-between {
+    justify-content: flex-start !important;
+    flex-wrap: wrap;
+    gap: 0.45rem;
+  }
+  .project-card > .d-flex.align-items-center.justify-content-between > * {
+    flex: 0 0 auto;
+    max-width: 100%;
+  }
+  .project-card .project-badge,
+  .project-card > .d-flex > .tech-tag {
+    white-space: nowrap;
+  }
 }
